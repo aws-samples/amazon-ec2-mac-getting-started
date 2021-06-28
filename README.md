@@ -17,7 +17,7 @@ This repository should help **you** get up-and-running with EC2 Mac Instances. S
 ### **Getting Started with Amazon EC2 Mac Instances.**
 ---
 
-Much of the work behind EC2 Mac instances is so that they look, feel, and act like any other EC2 instances, within the confines of the [macOS Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf). Do note that this SLA applies to *any company* using macOS - it's not unique to AWS or Amazon! 
+Much of the work behind EC2 Mac instances is so that they look, feel, and act like any other EC2 instances, within the [macOS Software License Agreement](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf). Do note that this SLA applies to *any company* using macOS - it's not unique to AWS or Amazon! 
 
 #### **Start [here](ec2-macos.md) to get up-and-running with EC2 Mac!**
 
