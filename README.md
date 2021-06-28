@@ -1,6 +1,6 @@
 ## **Welcome to Amazon EC2 Mac Instances!**
 
-[Amazon EC2 Mac Instances](https://aws.amazon.com/ec2/nitro/) enable customers to run on-demand macOS workloads in the cloud for the first time, extending the flexibility, scalability, and cost benefits of AWS to all Apple developers. With EC2 Mac instances, developers creating apps for iPhone, iPad, Mac, Apple Watch, Apple TV, and Safari can provision and access macOS environments within minutes, dynamically scale capacity as needed, and benefit from AWS’s pay-as-you-go pricing.
+[Amazon EC2 Mac Instances](https://aws.amazon.com/ec2/nitro/) enable you to run on-demand macOS workloads in the cloud for the first time, extending the flexibility, scalability, and cost benefits of AWS to all Apple developers. With EC2 Mac instances, developers creating apps for iPhone, iPad, Mac, Apple Watch, Apple TV, and Safari can provision and access macOS environments within minutes, dynamically scale capacity as needed, and benefit from AWS’s pay-as-you-go pricing.
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=d0FulqrjHkk
 " target="_blank"><img src="img/animated_explainer_preview.png" width="800"
