@@ -22,6 +22,15 @@ Much of the work behind EC2 Mac instances is so that they look, feel, and act li
 #### **Start [here](ec2-macos.md) to get up-and-running with EC2 Mac!**
 
 ---
+### **Ready to go a bit deeper?**
+---
+
+* **NEW!** EC2 Mac now provides [SNS notifications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#subscribe-notifications) for macOS/bridgeOS updates
+* Ready to start an official [**proof-of-concept**](poc.md) (PoC)?
+* Want to know about our [roadmap](roadmap.md) for EC2 Mac?
+* More to come soon!
+ 
+---
 ### **Additional questions?**
 ---
 

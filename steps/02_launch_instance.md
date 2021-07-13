@@ -12,7 +12,7 @@
 
 <!-- TODO: Add good alt text on all img links below -->
 
-* Note that the 24-hour minimum allocation duration begins once the Dedicated Host is **allocated**, not when you **launch** an instance. Let’s go ahead and launch an instance now, starting back at the [EC2 Dashboard]()
+* Note that the 24-hour minimum allocation duration begins once the Dedicated Host is **allocated**, not when you **launch** an instance. Let’s go ahead and launch an instance now, starting back at the [EC2 Dashboard](https://console.aws.amazon.com/ec2/v2/home)
 
 
     <img src="../img/launch_instance_01.png" width="700">
@@ -42,7 +42,7 @@
     <img src="../img/launch_instance_05.png" width="700">
 
 
-* In Step 4, be sure to modify the size of the Root volume if your workflow requires more storage. In this example, I have increased the size to 250GB. You can also add any additional volumes that you would like with the Add New Volume button. Please note that EBS pricing is separate from EC2. To continue, select "Next: Add Tags".
+* In Step 4, be sure to modify the size of the Amazon Elastic Block Storage (EBS) boot volume if your workflow requires more storage. In this example, I have increased the size to 250GB. You can also add any additional volumes that you would like with the 'Add New Volume' button. For more details about choosing the best EBS volume size and type, review the [EBS documentation](https://aws.amazon.com/ebs/volume-types/), and also note that mac1.metal only supports the SSD-based volume types: _io1, io2, gp2, & gp3_. Please note that [EBS pricing is separate](https://aws.amazon.com/ebs/pricing/) from EC2. To continue, select "Next: Add Tags".
 
 
     <img src="../img/launch_instance_06.png" width="700">
@@ -66,13 +66,13 @@
     <img src="../img/launch_instance_09.png" width="700">
 
 
-* EC2 will prompt you to verify your [EC2 Key Pair](). If you don’t have one, please use the wizard to create one.
+* EC2 will prompt you to verify your [EC2 Key Pair](https://console.aws.amazon.com/ec2/v2/home?region=us-east-2#KeyPairs:). If you don’t have one, please use the wizard to create one.
 
 
     <img src="../img/launch_instance_10.png" width="700">
 
 
-* The wizard will complete and the instance will launch! Click on the Instance ID _(it will start with i- )_ to go back to the [EC2 Instances]() Console.
+* The wizard will complete and the instance will launch! Click on the Instance ID _(it will start with i- )_ to go back to the [EC2 Instances](https://console.aws.amazon.com/ec2/v2/home) Console.
 
 
     <img src="../img/launch_instance_11.png" width="700">
