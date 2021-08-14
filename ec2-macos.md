@@ -50,6 +50,7 @@ Because Amazon EC2 Mac instances are bare-metal instances, macOS has direct acce
 ### **Example Workloads**
 ---
 
+1. **NEW!** Please see our updated [collateral page](collateral.md) for a curated list of all our blogs, videos, tutorials, and documentation!
 1. [Jenkins with an EC2 Linux primary and EC2 Mac worker node](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)
 1. [Jenkins with an EC2 Linux primary on Amazon EKS and EC2 Mac worker node](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-jenkins/)
 1. [Anka (Type-2 virtualization software) on EC2 Mac](https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/)

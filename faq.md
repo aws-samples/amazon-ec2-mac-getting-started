@@ -31,7 +31,6 @@
 1.	[Do EC2 Mac instances support live migration?](#live)
 1.	[Do EC2 Mac instances support network burst capabilities?](#burst)
 1.	[Do EC2 Mac instances support Intel virtualization features, such as VT-d and VT-x?](#virt)
-1.  [What blogs or other technical collateral have been written about EC2 Mac?](#blogs)
 1.	[When will EC2 Mac instances support the Apple M1 chip?](#m1)
 
 ---
@@ -174,15 +173,6 @@
 
     Yes. EC2 Mac instances support both VT-d and VT-x. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
     
-1. <a name="blogs">**What blogs or other technical collateral have been written about EC2 Mac?**</a>
-
-    - [Integrating Amazon EC2 Mac workers with Amazon EKS and Gitlab](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-gitlab/)
-    - [Integrating Amazon EC2 Mac workers with Amazon EKS and Jenkins](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-jenkins/)
-    - [Getting Started with Anka by Veertu, Inc. on Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/)
-    - [Unify your iOS mobile app CI/CD pipline with Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)
-    - [Manage your Amazon EC2 Mac Instances with AWS Systems Manager](https://aws.amazon.com/blogs/mt/manage-your-amazon-ec2-macos-instances-with-aws-systems-manager/)
-    - [Building Amazon Machine Images for Amazon EC2 Mac Instances with Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/)
-
 1. <a name="m1">**When will EC2 Mac Instance support Apple M1 chip?**</a>
 
     The mac1.metal instances are based on the 2018 Mac mini, which leverages an Intel Core i7 processor. They do not contain the M1 processor that Apple released in November 2020. Incorporating hardware which includes the M1 is currently on the roadmap for 2021.
