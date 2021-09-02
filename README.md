@@ -25,7 +25,8 @@ Much of the work behind EC2 Mac instances is so that they look, feel, and act li
 ### **Ready to go a bit deeper?**
 ---
 
-* **NEW!!** We've created an updated [collateral page](collateral.md) to showcase our blogs, videos, tutorials, and documentation! Take a look!
+* **NEW!!** We've added a [Games](games.md) page with how EC2 Mac enables faster game delivery to market.
+* We've created an updated [collateral page](collateral.md) to showcase our blogs, videos, tutorials, and documentation! Take a look!
 * EC2 Mac now provides [SNS notifications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#subscribe-notifications) for macOS/bridgeOS updates
 * Ready to start an official [**proof-of-concept**](poc.md) (PoC)?
 * Want to know about our [roadmap](roadmap.md) for EC2 Mac?
