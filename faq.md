@@ -31,7 +31,6 @@
 1.	[Do EC2 Mac instances support live migration?](#live)
 1.	[Do EC2 Mac instances support network burst capabilities?](#burst)
 1.	[Do EC2 Mac instances support Intel virtualization features, such as VT-d and VT-x?](#virt)
-1.	[When will EC2 Mac instances support the Apple M1 chip?](#m1)
 
 ---
 1. <a name="release">**How do you release a dedicated host?**</a>
@@ -50,9 +49,13 @@
 1. <a name="amis">**What macOS AMIs are available?**</a>
 
     The latest versions of following macOS operating systems are available as AMIs in regions where EC2 Mac instances are available: 
-    a.	macOS Mojave (10.14.6)
-    b.	macOS Catalina (10.15.7) 
-    c.  macOS Big Sur (11.4)
+    a.	macOS Mojave (10.14.x)
+    b.	macOS Catalina (10.15.x) 
+    c.  macOS Big Sur (11.x)
+    
+    EC2 Mac instances are based on the 2018 Mac mini, which means Mojave is as 'far back' as you can go, since the 2018 Mac mini shipped with Mojave and Apple hardware only supports the macOS version shipped with the hardware or later.
+    * For older macOS versions, you can run a <a name="virt">type-2 virtualization layer</a> (e.g. VMware Fusion, Parallels, [Anka](https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/)) to get access to High Sierra or Sierra.
+    * For future macOS versions, you can do in-place upgrades on EC2 Mac to the new release until AWS vended AMI is available. Running beta versions is not recommended; we propose customers to <a name="cadence">wait the release goes GA</a> before doing an in-place upgrade.
 
 1. <a name="userdata">**How do you pass user data or automated configurations to an EC2 Mac instance?**</a>
 
@@ -135,7 +138,7 @@
 
 1. <a name="hibernation">**Do EC2 Mac instances support on-demand and spot hibernation?**</a>
 
-    No. EC2 Mac instances do not support on-demand or spot hibernation. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    No. EC2 Mac instances do not support on-demand or spot hibernation. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
 
 1. <a name="instance-storage">**Do EC2 Mac instances support booting from instance storage?**</a>
 
@@ -143,11 +146,11 @@
   
 1. <a name="recovery">**Do EC2 Mac instances support Auto Recovery or Host Recovery?**</a>
 
-    No. EC2 Mac instances do not support Auto Recovery or Host Recovery. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    No. EC2 Mac instances do not support Auto Recovery or Host Recovery. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
 
 1. <a name="groups">**Do EC2 Mac instances support Placement Groups?**</a>
 
-    No. EC2 Mac instances do not support Placement Groups. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    No. EC2 Mac instances do not support Placement Groups. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
 
 1. <a name="fsx">**Do EC2 Mac instances support FSx?**</a>
 
@@ -163,18 +166,14 @@
 
 1. <a name="live">**Do EC2 Mac instances support live migration?**</a>
 
-    No, EC2 Mac instances do not support live migration. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    No, EC2 Mac instances do not support live migration. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
 
 1. <a name="burst">**Do EC2 Mac instances support network burst capabilities?**</a>
 
-    No. EC2 Mac instances do not support network burst capabilities. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    No. EC2 Mac instances do not support network burst capabilities. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
 
 1. <a name="virt">**Do EC2 Mac instances support Intel virtualization features, such as VT-d and VT-x?**</a>
 
-    Yes. EC2 Mac instances support both VT-d and VT-x. EC2 Mac instances are only offered as bare metal instances on dedicated hosts.
+    Yes. EC2 Mac instances support both VT-d and VT-x. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
     
-1. <a name="m1">**When will EC2 Mac Instance support Apple M1 chip?**</a>
-
-    The mac1.metal instances are based on the 2018 Mac mini, which leverages an Intel Core i7 processor. They do not contain the M1 processor that Apple released in November 2020. Incorporating hardware which includes the M1 is currently on the roadmap for 2021.
-
 ---
