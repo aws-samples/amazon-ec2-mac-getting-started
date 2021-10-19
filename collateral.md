@@ -28,5 +28,7 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [EC2 Mac Scrubbing workflow details](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-stop)
 - [How to connect to an EC2 Mac Instance over VNC](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc)
 - [Details on EC2 Mac AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#ec2-macos-images)
+- To use Buildkite with EC2 Mac, read more [here](https://buildkite.com/docs/agent/v3/macos#main)
+- To learn more about Terraform's AWS provider support for EC2 Dedicated Hosts (including EC2 Mac), read more [here](https://github.com/hashicorp/terraform-provider-aws/issues/10752)
 
 ---
