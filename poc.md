@@ -16,7 +16,7 @@ Here's some tips from our experiences - please feel free to [open an issue](http
 #### A typical technical PoC workflow:
   * Identify [Regions and AZs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-considerations) for PoC, and communicate those to your AWS Account Team.
   * Identify macOS version(s) and Xcode version(s) needed
-  * Identify CI/CD tooling needed ([Jenkins, Fastlane, etc.](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/))
+  * Identify CI/CD tooling needed ([Jenkins, Fastlane,](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/), [Terraform](https://github.com/terraform-aws-modules/terraform-aws-ec2-instance), [Buildkite](https://buildkite.com/docs/agent/v3/macos#main), etc)
   * Identify size (in GB) and throughput (in IOPs) of [boot volume](https://aws.amazon.com/ebs/volume-types/) needed
   * Start with our vended AMI, configure as necessary, then [create a derivative AMI](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/creating-an-ami-ebs.html) ([alternatively, use Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/))
   * Determine any dynamic configuration needed via [ec2-macos-init](https://github.com/aws/ec2-macos-init)
