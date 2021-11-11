@@ -12,6 +12,7 @@ Here's some tips from our experiences - please feel free to [open an issue](http
 * Schedule cadence calls and/or email reports with the larger team to discuss progress and any concerns that may arise.
 * _To your AWS Account Team_: Confirm the AWS account ID and region you would like to use for the POC. AWS will ensure the account’s soft quota limit in that region is sized for your PoC and beyond.
 * _To your AWS Account Team_: Confirm the potential capacity (number of EC2 Mac instances) needed in which regions for the PoC - and for any production workloads post-PoC. AWS would like to capture this to drive EC2 Mac capacity planning across our global regions and on-going expansion. 
+* Review [example workflows](collateral.md) from EC2 Mac SMEs at AWS, our partners, and our customers.
 
 #### A typical technical PoC workflow:
   * Identify [Regions and AZs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-considerations) for PoC, and communicate those to your AWS Account Team.
