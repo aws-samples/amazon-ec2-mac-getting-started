@@ -9,6 +9,7 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [Unify your iOS mobile app CI/CD pipline with Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)
 - [Manage your Amazon EC2 Mac Instances with AWS Systems Manager](https://aws.amazon.com/blogs/mt/manage-your-amazon-ec2-macos-instances-with-aws-systems-manager/)
 - [Building Amazon Machine Images for Amazon EC2 Mac Instances with Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/)
+- [Implementing Auto Scaling for EC2 Mac Instances](https://aws.amazon.com/blogs/compute/implementing-autoscaling-for-ec2-mac-instances/)
 
 #### Videos:
 - [Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
@@ -17,6 +18,7 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [Amazon EC2 Mac Tech Tutorials - Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
 - [Connect to a Mac1 Amazon EC2 instance with VNC](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 - [AWS EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
+- [How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=f2rDM8p8oNE)
 
 #### Tutorials:
 
