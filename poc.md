@@ -23,6 +23,12 @@ Here's some tips from our experiences - please feel free to [open an issue](http
   * Determine any dynamic configuration needed via [ec2-macos-init](https://github.com/aws/ec2-macos-init)
   * [Allocate host(s)](steps/01_allocate_host.md), [launch instance(s)](steps/02_launch_instance.md), and [test it out!](03_connect_and_enable.md)
 
+
+#### Areas you might want to evaluate as part of your EC2 Mac POC include:
+ * Percentage change in build speed, build performance, number of build failures, and number of parallel builds
+ * Percentage of your macOS compute that needs to be always-on 24/7 or 24/5 vs percentage of your macOS compute that consists of burst capacity whenever the need arises
+These observations will drive a possible reduction in the number of Macs you would need with EC2 Mac. For example, we have customers reporting up to 4x improvement in build performance, up to 3x increase in parallel builds, and up to 80% reduction in build failures, and these results increase developer productivity, operational efficiency, and more efficient usage of macOS compute.
+
 #### A quick note about scrubbing:
  
 After every stop/terminate of EC2 Mac instances, we run a _scrubbing workflow_ that sanitizes the internal SSD, clears NVRAM variables, and optionally updates the [bridgeOS](https://en.wikipedia.org/wiki/BridgeOS) on the underlying Mac mini’s T2 chip if needed. This ensures that EC2 Mac instances have the same security bar as other Nitro instances. In addition, you don’t need to worry about keeping bridgeOS up-to-date to run the latest macOS AMIs. During this scrubbing process, the EC2 Mac Dedicated Host itself goes into a _pending_ state, and can take 40-65 minutes to complete (or ~3 hours if bridgeOS update is required).
