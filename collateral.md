@@ -10,6 +10,7 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [Manage your Amazon EC2 Mac Instances with AWS Systems Manager](https://aws.amazon.com/blogs/mt/manage-your-amazon-ec2-macos-instances-with-aws-systems-manager/)
 - [Building Amazon Machine Images for Amazon EC2 Mac Instances with Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/)
 - [Implementing Auto Scaling for EC2 Mac Instances](https://aws.amazon.com/blogs/compute/implementing-autoscaling-for-ec2-mac-instances/)
+- [Setting up EC2 Mac instances as shared remote development environments](https://aws.amazon.com/blogs/compute/setting-up-ec2-mac-instances-as-shared-remote-development-environments/)
 
 #### Videos:
 - [Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
