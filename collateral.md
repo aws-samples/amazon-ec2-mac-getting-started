@@ -1,6 +1,15 @@
 ## **EC2 Mac Blogs, Videos, Tutorials, and Documentation**
 ---
-Here is a list of content that the EC2 Mac team has created. If there is specific content you'd like to see, or if you have feedback on this content, please let us know by [opening an issue.](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose) 
+Here is a list of content that the EC2 Mac team has created. If there is specific content you'd like to see, or if you have feedback on this content, please let us know by [opening an issue.](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose)
+
+#### Customer Stories:
+- [Pinterest](https://aws.amazon.com/solutions/case-studies/pinterest-ec2-mac-instances-case-study/)
+  - [How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=f2rDM8p8oNE)
+- [Goldman Sachs](https://developer.gs.com/blog/mobile-cicd-with-ec2-macos/)
+- [Intuit](https://www.youtube.com/watch?v=rlmaJVy2DVw)
+- [Flipboard](https://www.youtube.com/watch?v=HMmu9sHLfgk)
+
+You can find more customer & partner stories on our [Product Page](https://aws.amazon.com/ec2/instance-types/mac/).
 
 #### Blogs:
 - [Integrating Amazon EC2 Mac workers with Amazon EKS and Gitlab](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-gitlab/)
@@ -12,14 +21,15 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [Implementing Auto Scaling for EC2 Mac Instances](https://aws.amazon.com/blogs/compute/implementing-autoscaling-for-ec2-mac-instances/)
 - [Setting up EC2 Mac instances as shared remote development environments](https://aws.amazon.com/blogs/compute/setting-up-ec2-mac-instances-as-shared-remote-development-environments/)
 
+
 #### Videos:
 - [Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
 - [Amazon EC2 Mac tech tutorials - Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
 - [Amazon EC2 Mac tech tutorials - Part 2 - How to Use Block and File Storage](https://www.youtube.com/watch?v=--BfdlnIc7Y)
 - [Amazon EC2 Mac Tech Tutorials - Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
 - [Connect to a Mac1 Amazon EC2 instance with VNC](https://www.youtube.com/watch?v=FtU2_bBfSgM)
-- [AWS EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
-- [How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=f2rDM8p8oNE)
+- [Amazon EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
+- [AWS on Air: Amazon EC2 Mac M1 Preview Launch & Demo](https://www.twitch.tv/videos/1222154674?t=00h22m30s)
 
 #### Tutorials:
 
