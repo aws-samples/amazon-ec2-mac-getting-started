@@ -8,6 +8,7 @@ Here is a list of content that the EC2 Mac team has created. If there is specifi
 - [Goldman Sachs](https://developer.gs.com/blog/mobile-cicd-with-ec2-macos/)
 - [Intuit](https://www.youtube.com/watch?v=rlmaJVy2DVw)
 - [Flipboard](https://www.youtube.com/watch?v=HMmu9sHLfgk)
+  - [Read and listen how Flipboard improved their build speed by 4x](https://www.wired.com/sponsored/story/bye-bye-bender/)  
 
 You can find more customer & partner stories on our [Product Page](https://aws.amazon.com/ec2/instance-types/mac/).
 
