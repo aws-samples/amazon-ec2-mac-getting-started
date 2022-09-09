@@ -174,6 +174,6 @@
 
 1. <a name="virt">**Do EC2 Mac instances support Intel virtualization features, such as VT-d and VT-x?**</a>
 
-    Yes. EC2 Mac instances support both VT-d and VT-x. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
+    Yes. x86-based EC2 Mac instances (mac1.metal) support both VT-d and VT-x. EC2 Mac instances are offered as bare metal instances on dedicated hosts.
     
 ---
