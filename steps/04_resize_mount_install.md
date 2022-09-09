@@ -12,7 +12,7 @@
 
 By default, we don't resize the 'Macintosh HD' APFS filesystem to fill the entirety of the allocated EBS boot volume. 
 This is because the resize operation *blocks all I/O during the resize* and the time of the resize operation scales with volume size.
-As the largest single EBS boot volume you could attach to an mac1.metal instance is 16TB, we have chosen to [make filesystem resize](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-increase-volume) an additional step.
+As the largest single EBS boot volume you could attach to an EC2 Mac instance is 16TB, we have chosen to [make filesystem resize](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-increase-volume) an additional step.
 Typically this is **only done once**, any AMI created from a resized filesystem will retain the size of that filesystem on any instances launched from that AMI. 
 
 ```
