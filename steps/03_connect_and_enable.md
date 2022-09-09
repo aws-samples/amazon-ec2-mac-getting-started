@@ -2,9 +2,9 @@
 
 ### **Before you begin:**
 
-* Ensure that you have launched a mac1.metal instance as described [here](02_launch_instance.md).
+* Ensure that you have launched a mac1.metal or mac2.metal instance as described [here](02_launch_instance.md).
 
-* Ensure that you have access to the [EC2 key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) used with launching the mac1.metal instance.
+* Ensure that you have access to the [EC2 key pair](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-key-pairs.html) used with launching the EC2 Mac instance.
 
 ---
 ### **Get connection information from the AWS Management Console**
@@ -28,7 +28,7 @@
 ### **Connect using the [AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/install-cliv2.html) and [SSM](https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager.html)**
 ---
 
-Replace `instance-id` with the instance ID of the mac1.metal instance (returned after succesful launch, or found in the console):
+Replace `instance-id` with the instance ID of the EC2 Mac instance (returned after succesful launch, or found in the console):
 
 ```
 aws ssm start-session --target=<instance-id> --region="us-east-2"
@@ -41,7 +41,7 @@ Continue with [enable GUI access over VNC](#gui) below.
 ### **Using Terminal on macOS or another command-line environment**
 ---
 
-Replace `<ec2-key-pair>` and `<ip-address>` with the ones used to launch the mac1.metal instance:
+Replace `<ec2-key-pair>` and `<ip-address>` with the ones used to launch the instance:
 
 ```
 ssh -i <ec2-key-pair> ec2-user@<ip-address>
@@ -84,7 +84,7 @@ Setting all users privileges to 1073742079.
 Done.
 ```
 
-Disconnect the existing session and reconnect, tunneling the VNC port (5900) over SSH, again replacing `<ec2-key-pair>` and `<ip-address>` with the ones used to launch the mac1.metal instance:
+Disconnect the existing session and reconnect, tunneling the VNC port (5900) over SSH, again replacing `<ec2-key-pair>` and `<ip-address>` with the ones used to launch the EC2 Mac instance:
 
 ```
 exit
