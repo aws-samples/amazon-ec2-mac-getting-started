@@ -6,9 +6,9 @@
 " target="_blank"><img src="img/animated_explainer_preview.png" width="800"
 alt="YouTube preview of animated Amazon EC2 Mac explainer video"/></a>
 
-Powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/), EC2 Mac instances are built on 2018 Apple Mac mini computers featuring Intel Core i7 processors, and offer a choice of macOS Mojave (10.14), macOS Catalina (10.15), and macOS Big Sur (11.4). 
+x86-based EC2 Mac instances are built on Apple Mac mini computers, featuring Intel Core i7 processors, and are powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/). They offer a choice of macOS Catalina (10.15), macOS Big Sur (11), and macOS Monterey (12) as Amazon Machine Images (AMIs). M1-based EC2 Mac instances are built on Apple M1 Mac mini computers and are powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/). EC2 M1 Mac instances enable Arm64 macOS environments for the first time on AWS and support macOS Big Sur (11) and macOS Monterey (12) as Amazon Machine Images (AMIs).
 
-<img src="img/nitro-mac-full-image.png" width="800" alt="A 2018 Mac Mini inside a rack sled, connected to the AWS Nitro System via Thunderbolt 3">
+<img src="img/nitro-mac-full-image.png" width="800" alt="A Mac Mini inside a rack sled, connected to the AWS Nitro System via Thunderbolt 3">
 
 This repository should help **you** get up-and-running with EC2 Mac Instances. See anything missing? Please open an [issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), or if you have something to add, please open a [PR](https://github.com/aws-samples/amazon-ec2-mac-getting-started/compare). Thanks! **We're glad you're here**.
 
