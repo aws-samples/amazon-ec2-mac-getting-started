@@ -15,7 +15,7 @@ Are you part of your organization's devOps department, maybe you're just '_the A
 One of the largest benefits of EC2 Mac instances are that they are indeed _EC2_ instances, and receive all the benefits therein. Things like [VPC networking](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html), [IAM instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html), [Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html), including [Fleet Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet.html), [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html), and more - all work just like they do with EC2 Linux and Windows instances.
 
 
-EC2 Mac instances also support [Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html), and this is one of the biggest benefits of EC2 Mac. Re-imaging on-premises macOS hardware is a manual and time-consuming process. With AMIs, you can start with one of our vended macOS versions (_Mojave, Catalina, or Big Sur_), add in any customization you may need (including Xcode versions, third-party software, etc.), and 'bake' an Amazon Machine Image that can launch any further EC2 instances.
+EC2 Mac instances also support [Amazon Machine Images (AMIs)](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/AMIs.html), and this is one of the biggest benefits of EC2 Mac. Re-imaging on-premises macOS hardware is a manual and time-consuming process. With AMIs, you can start with one of our vended macOS versions (_Catalina (10.15), Big Sur (11), or Monterey (12) on x86 instances, Big Sur (11) or Monterey (12) on M1 instances_), add in any customization you may need (including Xcode versions, third-party software, etc.), and 'bake' an Amazon Machine Image that can launch any further EC2 instances.
 This is sometimes referred to as a ['Golden AMI'](https://medium.com/tide-engineering-team/building-your-gold-amis-using-packer-d3248736b3d8) workflow, and it works well. It's even possible to automate AMI creation for EC2 Mac with popular tooling such as Hashicorp [Packer](https://learn.hashicorp.com/packer). Please see [this blog](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/) for more details.
 
 ---
@@ -28,7 +28,7 @@ In addition to all the functionality benefits of EC2, Amazon EC2 Mac Instances h
 Amazon EC2 bare-metal instances were [released in 2017](https://aws.amazon.com/blogs/aws/new-amazon-ec2-bare-metal-instances-with-direct-access-to-hardware/), and allow for direct hardware access by the EC2 instance, bypassing the type-1 Nitro hypervisor. Note that the rest of the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/) is still present, including the Nitro Security Chip, which blocks write access to non-volatile memory and provides a hardware root-of-trust, and the Nitro I/O card, which offloads storage and networking I/O to separate custom silicon, conserving CPU and memory for the instance.
 
 
-With EC2 Mac instances, you have the full performance of the underlying 2018 Mac mini. EC2 Mac instances run on physical host machines that are dedicated to one account, which AWS calls [Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html). These are allocated and released as a specific operation (via the [AWS Management Console or AWS Command Line Interface(CLI)](steps/01_allocate_host)) before use. With dedicated hosts, your cost is tallied by the amount of time the host itself is allocated to your AWS account, and any instances running on top are no additional charge. Dedicated Host pricing is [available here](https://calculator.aws/#/createCalculator/EC2DedicatedHosts).
+With EC2 Mac instances, you have the full performance of the underlying Mac mini. EC2 Mac instances run on physical host machines that are dedicated to one account, which AWS calls [Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html). These are allocated and released as a specific operation (via the [AWS Management Console or AWS Command Line Interface(CLI)](steps/01_allocate_host)) before use. With dedicated hosts, your cost is tallied by the amount of time the host itself is allocated to your AWS account, and any instances running on top are no additional charge. Dedicated Host pricing is [available here](https://calculator.aws/#/createCalculator/EC2DedicatedHosts).
 
 
 As part of Apple’s [macOS Software License Agreement (SLA)](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), there is a 24-hour minimum allocation period for macOS in the cloud. This means that once you’ve successfully allocated a dedicated Mac1 host and received a host-id back, a 24-hour clock ‘starts running.’  So the earliest time you can release that Dedicated Host is after the 24-hour period has passed. Trying to release that Dedicated Host before 24 consecutive hours have elapsed will return an error, as seen in the following screenshot:
@@ -63,17 +63,17 @@ Because Amazon EC2 Mac instances are bare-metal instances, macOS has direct acce
 
     <img src="img/service_quotas_console.png" width="500" alt="The Service Quotas Console with 'mac1' typed into the search bar.">
 
-1. Identify the [AWS Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you will use, being mindful that EC2 Mac instances are available today in the [US East (N. Virginia), US East (Ohio), US West (Oregon), EU (Ireland), and Asia-Pacific (Singapore) regions](https://aws.amazon.com/about-aws/whats-new/2020/11/announcing-amazon-ec2-mac-instances-for-macos/).
+1. Identify the [AWS Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you will use. Amazon EC2 x86 Mac instances are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland, Frankfurt, London, Stockholm), and Asia Pacific (Singapore, Seoul, Tokyo, Mumbai, and Sydney). Amazon EC2 M1 Mac instances are available across the following AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Ireland), and Asia Pacific (Singapore).
 
-1. Identify macOS version(s) [(Mojave, Catalina, or Big Sur)](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;architecture=x86_64_mac;ownerAlias=amazon;sort=name), Xcode version(s), and any third-party software needed for your workload.
+3. Identify macOS version(s) [(Catalina, Big Sur、or Monterey)](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;architecture=x86_64_mac;ownerAlias=amazon;sort=name), Xcode version(s), and any third-party software needed for your workload.
 
 1. Identify size (in GB) and throughput (in IOPs) needed for your boot volume. This will determine the [EBS volume type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) to use when launching the mac1.metal instance.
 
 1. Determine any dynamic loading needed via [ec2-macos-init](https://github.com/aws/ec2-macos-init).
 
-1. [Allocate a mac1 host](steps/01_allocate_host.md).
+1. [Allocate a mac1/mac2 host](steps/01_allocate_host.md).
 
-1. [Launch an mac1.metal instance onto the allocated host](steps/02_launch_instance.md).
+1. [Launch an mac1.metal/mac2.metal instance onto the allocated host](steps/02_launch_instance.md).
 
 1. [Connect to the instance over SSH and enable graphical access](steps/03_connect_and_enable.md).
 
