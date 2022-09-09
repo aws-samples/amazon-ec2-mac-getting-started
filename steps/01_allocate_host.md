@@ -20,7 +20,7 @@
 
     <img src="../img/dedicated_host_console_2.png" width="800" alt="The EC2 Dedicated Host console with the Allocate button highlighted.">
 
-* Choose a name tag and availability zones for your host. We suggest leaving [auto placement](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-understanding) **ON**. Host recovery is currently not supported with EC2 Mac.
+* Choose a name tag and availability zones for your host. Select the appropriate instance type for your desired architecture (x86-based EC2 Mac instances are **mac1.metal**, M1-based EC2 Mac instances are **mac2.metal**). We suggest leaving [auto placement](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/how-dedicated-hosts-work.html#dedicated-hosts-understanding) **ON**. Host recovery is currently not supported with EC2 Mac.
 
     <img src="../img/dedicated_host_console_3.png" width="400" alt="The EC2 Dedicated Host allocation dialog screen.">
 
