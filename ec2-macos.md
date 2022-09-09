@@ -31,7 +31,7 @@ Amazon EC2 bare-metal instances were [released in 2017](https://aws.amazon.com/b
 With EC2 Mac instances, you have the full performance of the underlying Mac mini. EC2 Mac instances run on physical host machines that are dedicated to one account, which AWS calls [Dedicated Hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html). These are allocated and released as a specific operation (via the [AWS Management Console or AWS Command Line Interface(CLI)](steps/01_allocate_host)) before use. With dedicated hosts, your cost is tallied by the amount of time the host itself is allocated to your AWS account, and any instances running on top are no additional charge. Dedicated Host pricing is [available here](https://calculator.aws/#/createCalculator/EC2DedicatedHosts).
 
 
-As part of Apple’s [macOS Software License Agreement (SLA)](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), there is a 24-hour minimum allocation period for macOS in the cloud. This means that once you’ve successfully allocated a dedicated Mac1 host and received a host-id back, a 24-hour clock ‘starts running.’  So the earliest time you can release that Dedicated Host is after the 24-hour period has passed. Trying to release that Dedicated Host before 24 consecutive hours have elapsed will return an error, as seen in the following screenshot:
+As part of Apple’s [macOS Software License Agreement (SLA)](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf), there is a 24-hour minimum allocation period for macOS in the cloud. This means that once you’ve successfully allocated a dedicated mac1 or mac2 host and received a host-id back, a 24-hour clock ‘starts running.’  So the earliest time you can release that Dedicated Host is after the 24-hour period has passed. Trying to release that Dedicated Host before 24 consecutive hours have elapsed will return an error, as seen in the following screenshot:
 
 
 <img src="img/release_host_24h.png" width="800" alt="AWS CLI command result with a 500 Error after attempting to release a mac1 Dedicated Host before 24 hours have elapsed.">
@@ -67,7 +67,7 @@ Because Amazon EC2 Mac instances are bare-metal instances, macOS has direct acce
 
 3. Identify macOS version(s) [(Catalina, Big Sur、or Monterey)](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;architecture=x86_64_mac;ownerAlias=amazon;sort=name), Xcode version(s), and any third-party software needed for your workload.
 
-1. Identify size (in GB) and throughput (in IOPs) needed for your boot volume. This will determine the [EBS volume type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) to use when launching the mac1.metal instance.
+1. Identify size (in GB) and throughput (in IOPs) needed for your boot volume. This will determine the [EBS volume type](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ebs-volume-types.html) to use when launching the EC2 Mac instance.
 
 1. Determine any dynamic loading needed via [ec2-macos-init](https://github.com/aws/ec2-macos-init).
 
