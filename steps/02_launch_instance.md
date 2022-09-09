@@ -2,7 +2,7 @@
 
 ### **Before you begin:**
 
-* Ensure that you have allocated a mac1 Dedicated Host as described [here](01_allocate_host.md).
+* Ensure that you have allocated a mac1 or mac2 Dedicated Host as described [here](01_allocate_host.md).
 
 * Ensure that the IAM User or Role you are using has  [EC2:LaunchInstances](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-actions-as-permissions) permission.
 
@@ -30,7 +30,8 @@
     <img src="../img/launch_instance_03.png" width="700">
 
  
-* In Step 2, EC2 has already selected a mac1.metal instance type for you, select Next: Configure Instance Details to continue:
+* In Step 2, EC2 has already selected a 
+.metal instance type for you, select Next: Configure Instance Details to continue:
 
 
     <img src="../img/launch_instance_04.png" width="700">
@@ -42,7 +43,7 @@
     <img src="../img/launch_instance_05.png" width="700">
 
 
-* In Step 4, be sure to modify the size of the Amazon Elastic Block Storage (EBS) boot volume if your workflow requires more storage. In this example, I have increased the size to 250GB. You can also add any additional volumes that you would like with the 'Add New Volume' button. For more details about choosing the best EBS volume size and type, review the [EBS documentation](https://aws.amazon.com/ebs/volume-types/), and also note that mac1.metal only supports the SSD-based volume types: _io1, io2, gp2, & gp3_. Please note that [EBS pricing is separate](https://aws.amazon.com/ebs/pricing/) from EC2. To continue, select "Next: Add Tags".
+* In Step 4, be sure to modify the size of the Amazon Elastic Block Storage (EBS) boot volume if your workflow requires more storage. In this example, I have increased the size to 250GB. You can also add any additional volumes that you would like with the 'Add New Volume' button. For more details about choosing the best EBS volume size and type, review the [EBS documentation](https://aws.amazon.com/ebs/volume-types/), and also note that EC2 Mac instances only support the SSD-based volume types: _io1, io2, gp2, & gp3_. Please note that [EBS pricing is separate](https://aws.amazon.com/ebs/pricing/) from EC2. To continue, select "Next: Add Tags".
 
 
     <img src="../img/launch_instance_06.png" width="700">
@@ -54,7 +55,7 @@
     <img src="../img/launch_instance_07.png" width="700">
 
 
-* In Step 6, create a new security group and allow SSH over port 22 for your IP. This will allow for remote access to the mac1.metal instance we are launching. There are several items to change, as shown in the screenshot below. Start by ensuring the “Create a new security group” radio button is selected. Next, give the security group a name and description in their respective fields. Pull-down the Type selector to “SSH” and the Source selector to “My IP”. Finally, select Review and Launch to go to the last step.
+* In Step 6, create a new security group and allow SSH over port 22 for your IP. This will allow for remote access to the EC2 Mac instance we are launching. There are several items to change, as shown in the screenshot below. Start by ensuring the “Create a new security group” radio button is selected. Next, give the security group a name and description in their respective fields. Pull-down the Type selector to “SSH” and the Source selector to “My IP”. Finally, select Review and Launch to go to the last step.
 
 
     <img src="../img/launch_instance_08.png" width="700">
