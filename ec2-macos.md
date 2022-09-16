@@ -63,7 +63,7 @@ Because Amazon EC2 Mac instances are bare-metal instances, macOS has direct acce
 
     <img src="img/service_quotas_console.png" width="500" alt="The Service Quotas Console with 'mac1' typed into the search bar.">
 
-1. Identify the [AWS Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you will use. Amazon EC2 x86 Mac instances are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland, Frankfurt, London, Stockholm), and Asia Pacific (Singapore, Seoul, Tokyo, Mumbai, and Sydney). Amazon EC2 M1 Mac instances are available across the following AWS Regions: US East (N. Virginia), US West (Oregon), Europe (Ireland), and Asia Pacific (Singapore).
+1. Identify the [AWS Regions and Availability Zones](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/) you will use. Amazon EC2 x86 Mac instances are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland, Frankfurt, London, Stockholm), and Asia Pacific (Singapore, Seoul, Tokyo, Mumbai, and Sydney). Amazon EC2 M1 Mac instances are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Singapore).
 
 3. Identify macOS version(s) [(Catalina, Big Sur、or Monterey)](https://us-east-2.console.aws.amazon.com/ec2/v2/home?region=us-east-2#Images:visibility=public-images;architecture=x86_64_mac;ownerAlias=amazon;sort=name), Xcode version(s), and any third-party software needed for your workload.
 
