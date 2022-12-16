@@ -19,6 +19,8 @@
 8. [(Optional) Resize the filesystem, mount an EFS filesystem, or install software through brew](steps/04_resize_mount_install.md).
 9. *Congratulations, you're up-and-running with an Amazon EC2 Mac instance!*
 
+---
+#### Stuck at any point? Please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), create a [re:Post](https://repost.aws/) with tag #ec2mac, or reach out via [email](mailto:ec2-mac-wwso@amazon.com).
 
 ---
 **More about EC2 Mac & AWS**
