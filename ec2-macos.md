@@ -1,5 +1,6 @@
-*Getting Started with Amazon EC2 Mac Instances.*
 
+**Getting Started with Amazon EC2 Mac Instances**
+---
 
 
 1. Log into the [AWS console](https://console.aws.amazon.com/), or create an account, if necessary. 
@@ -19,9 +20,9 @@
 9. *Congratulations, you're up-and-running with an Amazon EC2 Mac instance!*
 
 
-
-*More about EC2 Mac & AWS*
-
+---
+**More about EC2 Mac & AWS**
+---
 
 
 One of the largest benefits of EC2 Mac instances are that they are indeed EC2 instances, and receive all the benefits therein. Things like [VPC networking](https://docs.aws.amazon.com/vpc/latest/userguide/what-is-amazon-vpc.html), [IAM instance profiles](https://docs.aws.amazon.com/IAM/latest/UserGuide/id_roles_use_switch-role-ec2_instance-profiles.html), [Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html), including [Fleet Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/fleet.html), [CloudWatch](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/WhatIsCloudWatch.html), and more - all work just like they do with EC2 Linux and Windows instances.
@@ -31,9 +32,9 @@ EC2 Mac instances also support [Amazon Machine Images (AMIs)](https://docs.aws.a
 This is sometimes referred to as a ['Golden AMI'](https://medium.com/tide-engineering-team/building-your-gold-amis-using-packer-d3248736b3d8) workflow, and it works well. It's even possible to automate AMI creation for EC2 Mac with popular tooling such as [Hashicorp Packer](https://learn.hashicorp.com/packer). Please see [this blog](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/) for more details.
 
 
-
-*Unique aspects of EC2 Mac instances*
-
+---
+**Unique aspects of EC2 Mac instances**
+---
 
 
 In addition to all the functionality benefits of EC2, Amazon EC2 Mac Instances have a few unique aspects. Amazon EC2 Mac instances are offered as [bare-metal](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/instance-types.html#ec2-nitro-instances) instances running on top of single-tenant [dedicated hosts](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/dedicated-hosts-overview.html), to comply with [macOS licensing](https://www.apple.com/legal/sla/docs/macOSBigSur.pdf). Let’s break that down a bit:
@@ -61,9 +62,9 @@ Because Amazon EC2 Mac instances are bare-metal instances, macOS has direct acce
 
 
 
-
-*Example Workloads*
-
+---
+**Example Workloads**
+---
 
 
 
