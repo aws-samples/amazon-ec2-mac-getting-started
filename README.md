@@ -2,7 +2,7 @@
 
 *We’re happy you’re here!* 
 
-This repository should help you get up-and-running with Amazon EC2 Mac Instances. See anything missing? Please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), create a [re:Post](https://repost.aws/) with tag #ec2mac, or reach out via [email](mailto:ec2-mac-wwso@amazon.com), or if you have something to add, please [open a PR](https://github.com/aws-samples/amazon-ec2-mac-getting-started/compare). Thanks—now, let’s get going!
+This repository should help you get up-and-running with Amazon EC2 Mac Instances. See anything missing? Please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), creating a [re:Post](https://repost.aws/) with the tag #ec2mac, or reaching out via [email](mailto:ec2-mac-wwso@amazon.com), or, if you have something to add, please [open a PR](https://github.com/aws-samples/amazon-ec2-mac-getting-started/compare). Thanks—now, let’s get going!
 
 ---
 ### **What are EC2 Mac Instances?**
