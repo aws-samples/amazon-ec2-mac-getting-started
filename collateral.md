@@ -10,16 +10,16 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - - You can find more customer & partner stories on our [EC2 Mac Product Page.](https://aws.amazon.com/ec2/instance-types/mac/)
 
 #### Technical Resources:
-* [The official documentation on EC2 Mac Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) is the best place to start for most up-to-date technical content
-* [Getting Started with Amazon EC2 Mac instances GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here!)
-* [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
+- [The official documentation on EC2 Mac Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) is the best place to start for most up-to-date technical content!
+- [Getting Started with Amazon EC2 Mac instances: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here—this page is a part of it!)
+- [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 
 #### Blogs:
-* <sup>New!</sup> [New Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
-* <sup>New!</sup> [General Availability Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
-* [Access Amazon EFS file systems from EC2 Mac instances](https://aws.amazon.com/about-aws/whats-new/2021/02/access-amazon-efs-file-systems-from-ec2-mac-instances-running-macos-big-sur?)
-* [EC2 Mac instances now support macOS Big Sur AMIs](https://aws.amazon.com/about-aws/whats-new/2021/02/amazon-ec2-mac-instances-now-support-macos-big-sur)
-* [Jeff Barr’s blog: Use Amazon EC2 Mac Instances to Build & Test macOS, iOS, iPadOS, tvOS, and watchOS Apps](https://aws.amazon.com/blogs/aws/new-use-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps)
+- <sup>New!</sup> [About Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
+- <sup>New!</sup> [Announcing General Availability of Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
+- [Access Amazon EFS file systems from EC2 Mac instances](https://aws.amazon.com/about-aws/whats-new/2021/02/access-amazon-efs-file-systems-from-ec2-mac-instances-running-macos-big-sur?)
+- [EC2 Mac instances now support macOS Big Sur AMIs](https://aws.amazon.com/about-aws/whats-new/2021/02/amazon-ec2-mac-instances-now-support-macos-big-sur)
+- [Jeff Barr’s blog: Use Amazon EC2 Mac Instances to Build & Test macOS, iOS, iPadOS, tvOS, and watchOS Apps](https://aws.amazon.com/blogs/aws/new-use-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps)
 - [Integrating Amazon EC2 Mac workers with Amazon EKS and Gitlab](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-gitlab/)
 - [Integrating Amazon EC2 Mac workers with Amazon EKS and Jenkins](https://aws.amazon.com/blogs/opensource/integrating-ec2-macos-workers-with-eks-and-jenkins/)
 - [Unify your iOS mobile app CI/CD pipline with Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)
@@ -29,22 +29,18 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 
 #### Partner Blogs:
 
-* <sup>New!</sup> [Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
-* <sup>New!</sup> [General Availability Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
-* [Access Amazon EFS filesystems from EC2 Mac instances](https://aws.amazon.com/about-aws/whats-new/2021/02/access-amazon-efs-file-systems-from-ec2-mac-instances-running-macos-big-sur?)
-* [EC2 Mac instances now support macOS Big Sur AMIs](https://aws.amazon.com/about-aws/whats-new/2021/02/amazon-ec2-mac-instances-now-support-macos-big-sur)
-* [Jeff Barr’s blog: Use Amazon EC2 Mac Instances to Build & Test macOS, iOS, iPadOS, tvOS, and watchOS Apps](https://aws.amazon.com/blogs/aws/new-use-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps)
-* [Implementing macOS Build Agents into TeamCity Using Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/apn/implementing-macos-build-agents-into-teamcity-using-amazon-ec2-mac-instances/)
-* [Getting Started with Anka on Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/)
-* [Building Amazon Machine Images for Amazon EC2 Mac Instances with Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/)
-* [Buildkite and EC2 Mac](https://buildkite.com/docs/agent/v3/macos#main)
-* [Terraform's AWS support for EC2 Dedicated Hosts (including EC2 Mac)](https://github.com/hashicorp/terraform-provider-aws/issues/10752)
+- [Implementing macOS Build Agents into TeamCity Using Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/apn/implementing-macos-build-agents-into-teamcity-using-amazon-ec2-mac-instances/)
+- [Getting Started with Anka on Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/compute/getting-started-with-anka-on-ec2-mac-instances/)
+- [Building Amazon Machine Images for Amazon EC2 Mac Instances with Packer](https://aws.amazon.com/blogs/compute/building-amazon-machine-images-amis-for-ec2-mac-instances-with-packer/)
+- [Buildkite and EC2 Mac](https://buildkite.com/docs/agent/v3/macos#main)
+- [Terraform's AWS support for EC2 Dedicated Hosts (including EC2 Mac)](https://github.com/hashicorp/terraform-provider-aws/issues/10752)
 
 #### Videos:
 - [90-second Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
-- [Amazon EC2 Mac tech tutorials - Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
-- [Amazon EC2 Mac tech tutorials - Part 2 - How to Use Block and File Storage](https://www.youtube.com/watch?v=--BfdlnIc7Y)
-- [Amazon EC2 Mac Tech Tutorials - Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
+- Amazon EC2 Mac tech tutorials:
+- - [Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
+- - [Part 2 - How to Use Block and File Storage](https://www.youtube.com/watch?v=--BfdlnIc7Y)
+- - [Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
 - [Connect to a Mac1 Amazon EC2 instance with VNC](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 - [Amazon EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
 - [AWS on Air: Amazon EC2 Mac M1 Preview Launch & Demo](https://www.twitch.tv/videos/1222154674?t=00h22m30s)
