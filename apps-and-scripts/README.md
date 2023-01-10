@@ -11,7 +11,7 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
 
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf [here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/) and the launch blog by Jamf, Wipro, and AWS [here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/). The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available [here](http://lastmile/README.md) (a part of this repository). Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
 
 ---
 #### If you are an experienced user in AWS, awesome! [Check out our guide to starting your first EC2 Mac instance here!](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md)
@@ -70,7 +70,7 @@ If you’re just getting started with EC2 Mac, when you create your EC2 account,
 
 The AWS cloud is divided into physical regions, which are subdivided into Availability Zones, or AZs for short. See the diagram below: a region is made of many AZs, and each AZ itself is redundant too, made of multiple datacenters. [See here for a comprehensive list of all regions and AZs.](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
 
-![A diagram displaying AWS Region and Availability Zone layout.](img/aws_region_design_diagram.png)
+![A diagram displaying AWS Region and Availability Zone layout.](https://raw.githubusercontent.com/aws-samples/amazon-ec2-mac-getting-started/main/img/aws_region_design_diagram.png)
 
 * **x86-based EC2 Mac instances** are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland, Frankfurt, London, Stockholm), and Asia Pacific (Singapore, Seoul, Tokyo, Mumbai, and Sydney). 
 
