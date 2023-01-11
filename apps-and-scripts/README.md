@@ -9,14 +9,14 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
   * Build, test, sign, and publish your Apple apps in the cloud — *forget the Mac-in-a-closet (or under a desk).*
   * And, of course, integrate with device management to enroll and test complex workflows — *before they deploy to your users.*
 
-On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf [here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/) and the launch blog by Jamf, Wipro, and AWS [here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/). The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available [here](lastmile/README.md) (a part of this repository). Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
+On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available **[here](lastmile/README.md) (a part of this repository)**. Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
 
 ---
-#### If you are an experienced user in AWS, awesome! [Check out our guide to starting your first EC2 Mac instance here!](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md)
+#### If you are an experienced user in AWS, awesome! **[Check out our guide to starting your first EC2 Mac instance here!](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md)**
 
-#### If you’re not experienced in AWS, or don’t speak cloud at all, you’re still awesome! Let’s dive deeper together below on what we have to offer, starting with the name: EC2 Mac. ⬇️
+#### If you’re not experienced in AWS, or don’t speak cloud at all, **you’re still awesome!** Let’s dive deeper together below on what we have to offer, starting with the name: EC2 Mac. ⬇️
 ---
 
 
@@ -32,7 +32,7 @@ Yup, like a computer—that is available on-demand, accessible over the internet
 
 At its core, an EC2 Mac is an Apple Mac mini, connected to AWS cloud via AWS Nitro System—which provides network, storage, security, and more over Thunderbolt. While this Mac mini is the same as any other Mac mini you’d find off the shelf (see the specs below), the interconnection to AWS Nitro System is what enables you to run powerful Apple workloads in AWS cloud. When you request a Dedicated Host (the first step in getting your EC2 Mac up and running—more on that below), think of it as AWS physically handing that Mac mini to you—releasing the host is you “handing it back.” 
 
-If you’d like (or prefer to) see this all visualized, take a look at our 90-second EC2 Mac explainer video [here](https://www.youtube.com/watch?v=d0FulqrjHkk)!
+If you’d like (or prefer to) see this all visualized, take a look at our 90-second EC2 Mac explainer video **[here](https://www.youtube.com/watch?v=d0FulqrjHkk)**!
 
 ## Dedicated Host?
 
@@ -52,11 +52,11 @@ As for the EC2 Mac Dedicated Host hardware, there’s two types available: **Mac
 
 ## That’s  cool, but what can I do that I couldn't do before?
 
-EC2 Mac is more than a Mac mini on a rack in a datacenter. The Apple hardware is bare-metal connected to the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/)—a purpose-built, secure system that provides storage and networking over Thunderbolt, along with security and monitoring of the hardware itself. Nitro is responsible for ensuring a Mac Dedicated Host is prepared on-demand, its firmware updated, and all of its storage cleared. Also, Nitro gives you even more detailed insights into monitoring and logs, and is itself, by design, entirely locked off from tampering or admin access. Here’s a picture of what it all looks like together:
+EC2 Mac is more than a Mac mini on a rack in a datacenter. The Apple hardware is bare-metal connected to the **[AWS Nitro System](https://aws.amazon.com/ec2/nitro/)**—a purpose-built, secure system that provides storage and networking over Thunderbolt, along with security and monitoring of the hardware itself. Nitro is responsible for ensuring a Mac Dedicated Host is prepared on-demand, its firmware updated, and all of its storage cleared. Also, Nitro gives you even more detailed insights into monitoring and logs, and is itself, by design, entirely locked off from tampering or admin access. Here’s a picture of what it all looks like together:
 
 ![An image of a Mac mini in an AWS Nitro sled in a datacenter.](https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/nitro-mac-full-image.png)
 
-On the software side, there’s no shortage of enhancement, either: [`ec2-macos-init`](https://github.com/aws/ec2-macos-init) is an open-source helper agent included on the Amazon-vended image that allows you to run scripts or code as soon as the Mac is booted. The stock AMI includes [Homebrew (`brew`)](https://github.com/Homebrew/brew)as well, to assist in installation of packages across the internet. The [AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html) agent is also installed, bringing additional workflow integration, control, and reporting for your instances.[Read more here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#ec2-macos-images) on exactly what’s offered in the Amazon-vended AMI.
+On the software side, there’s no shortage of enhancement, either: **[`ec2-macos-init`](https://github.com/aws/ec2-macos-init)** is an open-source helper agent included on the Amazon-vended image that allows you to run scripts or code as soon as the Mac is booted. The stock AMI includes **[Homebrew (`brew`)](https://github.com/Homebrew/brew)** as well, to assist in installation of packages across the internet. The **[AWS Systems Manager](https://docs.aws.amazon.com/systems-manager/latest/userguide/what-is-systems-manager.html)** agent is also installed, bringing additional workflow integration, control, and reporting for your instances. **[Read more here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#ec2-macos-images)** on exactly what’s offered in the Amazon-vended AMI.
 
 In short, an EC2 Mac instance is far more secure than a stray Mac mini under a desk! Now that we have an EC2 Mac instance running on a Dedicated Host, let’s next connect it a network.
 
@@ -68,7 +68,7 @@ If you’re just getting started with EC2 Mac, when you create your EC2 account,
 
 ## AWS Regions( and Availability Zones)?
 
-The AWS cloud is divided into physical regions, which are subdivided into Availability Zones, or AZs for short. See the diagram below: a region is made of many AZs, and each AZ itself is redundant too, made of multiple datacenters. [See here for a comprehensive list of all regions and AZs.](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)
+The AWS cloud is divided into physical regions, which are subdivided into Availability Zones, or AZs for short. See the diagram below: a region is made of many AZs, and each AZ itself is redundant too, made of multiple datacenters. **[See here for a comprehensive list of all regions and AZs.](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)**
 
 ![A diagram displaying AWS Region and Availability Zone layout.](https://raw.githubusercontent.com/aws-samples/amazon-ec2-mac-getting-started/main/img/aws_region_design_diagram.png)
 
@@ -82,7 +82,7 @@ Security Groups can be thought of as firewalls: they’ll keep any incoming conn
 
 ## Tell me more about security,  my InfoSec guys love that!
 
-Of course! To start, EC2 Mac instances carry all the security that AWS brings; see more[here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html). In addition, the Mac host is "yours" for the duration, When you’re done with it (or whenever you’re switching instances), a process occurs called [scrubbing,](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-stop) which securely destroys any data on the Mac, down to restoring the firmware, to remove any possible data that could be left in place. The root volume of the Mac can also be fully AES-256 encrypted, with a key that can be stored and rotated in AWS.
+Of course! To start, EC2 Mac instances carry all the security that AWS brings; see more **[here](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-security.html)**. In addition, the Mac host is "yours" for the duration, When you’re done with it (or whenever you’re switching instances), a process occurs called **[scrubbing,](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-stop)** which securely destroys any data on the Mac, down to restoring the firmware, to remove any possible data that could be left in place. The root volume of the Mac can also be fully AES-256 encrypted, with a key that can be stored and rotated in AWS.
 
 ## One other thing: SSH key.
 
@@ -90,17 +90,17 @@ Yes—for security, the AMIs launched do not have a password: they can only be a
 
 ## Cool! Now, how does it fit in with Jamf?
 
-AWS announced our partnership with Jamf in mid-2022, starting with [enrollment](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/), and have added [support and integration for Jamf Private Access](https://www.jamf.com/resources/press-releases/jamf-announces-new-integration-with-aws/). We’re constantly working on new integrations, too—stay tuned to this page for more!
+AWS announced our partnership with Jamf in mid-2022, starting with **[enrollment](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)**, and have added **[support and integration for Jamf Private Access](https://www.jamf.com/resources/press-releases/jamf-announces-new-integration-with-aws/)**. New for 2023, **[LastMile](lastmile/README.md)** is a script that guides a user to complete profile-based enrollment to allow configuration profiles, System Extensions, and much more. We’re constantly working on new integrations, too—stay tuned to this page for more!
 
 ## My apps and automations are getting more complex, what about development?
 
-Awesome! Many builders and admins are finding that scripting is the start of their automation journey, and are picking up more compiled languages like [Swift](https://aws.amazon.com/sdk-for-swift/)to expand their optimizations in ways they never have before. Building, testing, signing, and publishing apps is [something EC2 Mac is great for, and was built for](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)—so it’s easily integrated into common developer CI/CD workflows. 
+Awesome! Many builders and admins are finding that scripting is the start of their automation journey, and are picking up more compiled languages like **[Swift](https://aws.amazon.com/sdk-for-swift/)** to expand their optimizations in ways they never have before. Building, testing, signing, and publishing apps is **[something EC2 Mac is great for, and was built for](https://aws.amazon.com/blogs/compute/unify-your-ios-mobile-app-ci-cd-pipeline-with-amazon-ec2-mac-instances-2/)**—so it’s easily integrated into common developer CI/CD workflows. 
 
 ## OK, so now I get how this works. How much is it?
 
-Apple’s [macOS EULA](https://www.apple.com/legal/sla/) defines a minimum 24-hour initial lease period. Simply put, when you allocate an EC2 Mac Dedicated Host, a 24-hour timer will start. After the 24-hour initial lease time has elapsed, you are free to release the host back to AWS whenever you’re done: the AWS billing stops that very second. 
+Apple’s **[macOS EULA](https://www.apple.com/legal/sla/)** defines a minimum 24-hour initial lease period. Simply put, when you allocate an EC2 Mac Dedicated Host, a 24-hour timer will start. After the 24-hour initial lease time has elapsed, you are free to release the host back to AWS whenever you’re done: the AWS billing stops that very second. 
 
-The per-second AWS charge on the EC2 Mac Dedicated Host is the only charge: there’s no secondary “lease charge” or charge to run an instance. Additional charges may apply for storage, snapshots, and data transfer as well, with that info [here](https://aws.amazon.com/ebs/pricing/) and [here](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer). EC2 Mac pricing (per-region) can be found on [this page](https://aws.amazon.com/ec2/dedicated-hosts/pricing/) for both On-Demand usage and Savings Plan. 
+The per-second AWS charge on the EC2 Mac Dedicated Host is the only charge: there’s no secondary “lease charge” or charge to run an instance. Additional charges may apply for storage, snapshots, and data transfer as well, with that info [here](https://aws.amazon.com/ebs/pricing/) and **[here](https://aws.amazon.com/ec2/pricing/on-demand/#Data_Transfer)**. EC2 Mac pricing (per-region) can be found on **[this page](https://aws.amazon.com/ec2/dedicated-hosts/pricing/)** for both On-Demand usage and Savings Plan. 
 
 ## Awesome, I want to build this! What should I do next? 
 
@@ -108,5 +108,5 @@ Great! Our EC2 Mac step-by-step guide is [here](https://github.com/aws-samples/a
 
 ## I don’t really get it. Or, I’d like to learn more! 
 
-Feel free to get in touch with us if you’re stuck at any point or want to influence what AWS and our partners should be building next by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), creating a [re:Post](https://repost.aws/) with the tag **#ec2mac**, or reaching out via [email](mailto:ec2-mac-wwso@amazon.com).
+Feel free to get in touch with us if you’re stuck at any point or want to influence what AWS and our partners should be building next by **[opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose)**, creating a **[re:Post](https://repost.aws/)** with the tag **#ec2mac**, or reaching out via **[email](mailto:ec2-mac-wwso@amazon.com)**.
 
