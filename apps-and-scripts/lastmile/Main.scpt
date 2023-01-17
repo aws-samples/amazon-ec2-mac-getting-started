@@ -1,6 +1,6 @@
 --LastMile
 --AppleScript to prepare an updated profile for manual user completion.
---Includes SkyHook, a LaunchDaemon to auto-terminate unenrolled instances.
+--Includes SkyHook, a LaunchDaemon to auto-stop unenrolled instances.
 --With massive thanks to Chad at Alectrona, Chris Potrebka from Wipro, and Mike Gillespie and Sebastien Stormacq at AWS!
 
 --Jamf management username and password: used for initial SSH, change as needed here. Password is auto-generated.
@@ -40,21 +40,13 @@ on awsMD(MDPath)
 	return MDReturn
 end awsMD
 
---The subroutine itself, called later as "my retrieveSecret("mySecretIdentifier")"
-on retrieveSecret(secretRegion, secretID)
-	--Detects the architecture type and sets AWS binary paths appropriately.
-	set x86orASi to CPU type of (system info)
-	if x86orASi contains "ARM" then
-		set awsPath to "/opt/homebrew/bin/"
-	else
-		set awsPath to "/usr/local/bin/"
-	end if
-	--Initial command uses the aws command line tool and returns only the lines with "SecretString".
-	set secretReturn to (do shell script awsPath & "aws secretsmanager get-secret-value --region " & secretRegion & " --secret-id " & secretID & " --query SecretString")
-	--Parses the output of the command. First, removes the prefix…
+--The subroutine itself, called later as "my retrieveSecret("myAWSregion","mySecretIdentifier","mySecretKey").
+--If using separately, passing null to secretQueryKey will return a list of all key/value pairs in a secret.
+on retrieveSecret(secretRegion, secretID, secretQueryKey)
+	set pathPossibilities to "/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/opt/homebrew/bin:/opt/homebrew/sbin"
+	set secretReturn to (do shell script "PATH=" & pathPossibilities & " ; aws secretsmanager get-secret-value --region " & secretRegion & " --secret-id " & secretID & " --query SecretString")
 	set AppleScript's text item delimiters to "\"{\\\""
 	set secretBlob to text item 2 of secretReturn
-	--Checks if multiple items are present, and creates a set of lists to return if so.
 	if secretBlob contains "\\\",\\\"" then
 		set multiSecret to {}
 		set secretKeyList to {}
@@ -65,34 +57,34 @@ on retrieveSecret(secretRegion, secretID)
 		end repeat
 		repeat with secretCount from 1 to (count multiSecret)
 			set activeBlob to item secretCount of multiSecret
-			--…separates the key and value using a closing quote and colon…
 			set AppleScript's text item delimiters to "\\\":"
 			set {secretKey, secretValue} to text items of activeBlob
-			--…removes the opening quote from secretValue…
 			set AppleScript's text item delimiters to "\\\""
 			set secretValue to text item 2 of secretValue
-			--…removes the closing curly bracket from the secretValue if the last one…
 			if secretCount is equal to (count multiSecret) then
 				set AppleScript's text item delimiters to "\\\"}"
 				set secretValue to text item 1 of secretValue
 			end if
 			set AppleScript's text item delimiters to ""
-			copy secretKey to the end of secretKeyList
-			copy secretValue to the end of secretValueList
+			if secretQueryKey is not null then
+				if secretKey is secretQueryKey then
+					return secretValue
+					exit repeat
+				end if
+			else
+				copy secretKey to the end of secretKeyList
+				copy secretValue to the end of secretValueList
+			end if
 		end repeat
 		return {secretKeyList, secretValueList}
 	else
-		--…separate the key and value using a closing quote and colon…
 		set AppleScript's text item delimiters to "\\\":"
 		set {secretKey, secretValue} to text items of secretBlob
-		--…removes the closing curly bracket from the secretValue…
 		set AppleScript's text item delimiters to "\\\"}"
 		set secretValue to text item 1 of secretValue
-		--…cleans the opening quote from secretValue…
 		set AppleScript's text item delimiters to "\\\""
 		set secretValue to text item 2 of secretValue
 		set AppleScript's text item delimiters to ""
-		--…and returns the clean key/value pair(s)!
 		return {secretKey, secretValue}
 	end if
 end retrieveSecret
@@ -113,10 +105,15 @@ on error
 	set enrollmentCLI to null
 end try
 if enrollmentCLI is null then
+	
+	--------BEGIN JAMF PROFILE ROUTINES--------
+	
 	--Retrieve credentials for Jamf enrollment from AWS Secrets Manager.
 	set currentRegion to (my awsMD("placement/region"))
-	set {jamfKeyID, jamfServerDomain} to my retrieveSecret(currentRegion, "jamfServerDomain")
-	set {SDKUser, SDKPassword} to my retrieveSecret(currentRegion, "jamfEnrollmentCredentials")
+	set jamfServerDomain to my retrieveSecret(currentRegion, "jamfSecret", "jamfServerAddress")
+	set SDKUser to my retrieveSecret(currentRegion, "jamfSecret", "jamfEnrollmentUser")
+	set SDKPassword to my retrieveSecret(currentRegion, "jamfSecret", "jamfEnrollmentPassword")
+	
 	
 	--Formats Jamf server address for invitation XML payload.
 	set jamfServerAddress to (my tripleDouble(jamfServerDomain))
@@ -192,13 +189,11 @@ exit 0;"
 	
 	delay 1
 	set macOSVersion to system version of (system info)
-	(*set self to name of current application
-	tell application self to activate*)
 	--Instructional text.
 	if macOSVersion starts with "13" then
-		display dialog "Please double-click the MDM profile in the list, click \"Install\", and enter the administrator password when prompted to complete enrollment." buttons "OK" default button "OK" with icon 2
+		display dialog "Please double-click the MDM profile in the list, click the \"Install…\" button near the bottom, and enter the administrator password when prompted to complete enrollment. You may be prompted more than once." buttons "OK" default button "OK" with icon 2
 	else
-		display dialog "Please click the \"Install…\" button next to the MDM profile in the list and enter the administrator password to complete enrollment." buttons "OK" default button "OK" with icon 2
+		display dialog "Please click the \"Install…\" button on the right side and enter the administrator password to complete enrollment. You may be prompted more than once." buttons "OK" default button "OK" with icon 2
 	end if
 	
 	--Script waits until enrollment is completed, then (optionally) launches a SkyHook LaunchDaemon to auto-terminate the instance if it becomes unenrolled.
