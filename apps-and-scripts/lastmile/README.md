@@ -7,7 +7,7 @@ This script was developed at AWS for Amazon EC2 Mac instances to present a demon
 ## Getting Started
 
 ### AWS Secrets Manager
-The main runtime of this script retrieves two secrets (credentials/passwords) stored in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). This provides the Jamf URL (`jamfServerDomain`) and API credentials (`jamfEnrollmentCredentials`) required to generate the profile. The EC2 instance needs an appropriate IAM profile applied to itself to read these secrets, as well.
+The main runtime of this script retrieves a secret (credentials/passwords) stored in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). This provides values for the Jamf URL (`jamfServerDomain`) and API credentials (`jamfEnrollmentUser`,`jamfEnrollmentPassword`) required to generate the profile. The EC2 instance needs an appropriate IAM profile applied to itself to read these secrets, as well.
 
 The Jamf API user account for LastMile *only* requires the **Create** permission for **Computer Invitations**, and none else. See below for an example of an IAM instance profile including the allowed appropriate access.
 
@@ -18,9 +18,11 @@ To start using LastMile, the code from UserData.sh would be pasted into your ins
 Once this is complete, a LaunchAgent called SkyHook ensures the instance stays enrolled: if it leaves management, the instance stops immediately as an additional layer of security. In order for an instance to take advantage of SkyHook, it will need an Identity and Access Managment (IAM) instance profile attached to it—in addition to permissions to Secrets Manager above—for an instance to stop itself. For appropriate permissions, a profile would look similar to the below example, which can also be used in CloudFormation and Terraform templates to automate the creation of instances. 
 
 ---
-**Please ensure that you have:**
-* replaced `secret-1234567890abcdef0` and `secret-abcdef01234567890` with **your** applicable Secret IDs 
-* replaced **⚠️⇢region-name** with the appropriate **AWS region** (e.g. `us-east-1`).
+**Please ensure that you have:** replaced the sample ARN (starting with **⚠️⇢**) with the ARN of **your associated secret**, within the quotes: 
+
+(e.g. `"arn:aws:secretsmanager:aws-region-name:111122223333:secret:secret-abcdef01234567890"`)
+
+*Do not include the ⚠️⇢ as part of the string.*
 
 ---
 
@@ -48,8 +50,7 @@ Once this is complete, a LaunchAgent called SkyHook ensures the instance stays e
                 "secretsmanager:ListSecretVersionIds"
             ],
             "Resource": [
-                "arn:aws:secretsmanager:⚠️⇢region-name:111122223333:secret:secret-1234567890abcdef0",
-                "arn:aws:secretsmanager:⚠️⇢region-name:111122223333:secret:secret-abcdef01234567890"
+                "⚠️⇢arn:aws:secretsmanager:aws-region-name:111122223333:secret:secret-abcdef01234567890"
             ]
         },
         {
