@@ -37,7 +37,7 @@ sudo chown root:wheel /Library/LaunchAgents/com.amazon.dsx.lastmile.startup.plis
 ### Sample of a custom runtime hosted on Amazon Simple Storage Service (S3) download through the AWS CLI commented out below.
 
 mkdir -p /Users/Shared/.LastMile/
-curl https://raw.githubusercontent.com/aws-samples/amazon-ec2-mac-getting-started/mac-admin/apps-and-scripts/lastmile/Main.scpt -o /Users/Shared/.LastMile/Main.scpt
+curl https://raw.githubusercontent.com/aws-samples/amazon-ec2-mac-getting-started/main/apps-and-scripts/lastmile/Main.scpt -o /Users/Shared/.LastMile/Main.scpt
 # aws s3 cp s3://DOC-EXAMPLE-BUCKET/LastMile.scpt /Users/Shared/.LastMile/Main.scpt
 
 ### Setup continues here: change the written script to executable.
