@@ -2,12 +2,12 @@
 
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
-  * Access a Mac to test with whenever you might need one — *within minutes.*
-  * Switch between multiple macOS versions effortlessly — *on the same Mac.*
-  * Recreate user scenarios — *in a safe, ephemeral, non-virtualized macOS environment.*
-  * Test your macOS scripts and apps easily — *before they hit production.*
-  * Build, test, sign, and publish your Apple apps in the cloud — *forget the Mac-in-a-closet (or under a desk).*
-  * And, of course, integrate with device management to enroll and test complex workflows — *before they deploy to your users.*
+  * Access a Mac to test with whenever you might need one — [*within minutes.*](#im-in-what-about-access-to-the-gui-though)
+  * Switch between multiple macOS versions effortlessly — [*on the same Mac.*](#imaging)
+  * Recreate user scenarios — [*in a safe, ephemeral, non-virtualized macOS environment.*](instance)
+  * Test your macOS scripts and apps easily — [*before they hit production.*](#thats--cool-but-what-can-i-do-that-i-couldnt-do-before)
+  * Build, test, sign, and publish your Apple apps in the cloud — [*forget the Mac-in-a-closet (or under a desk).*](#my-apps-and-automations-are-getting-more-complex-what-about-development)
+  * And, of course, integrate with device management to enroll and test complex workflows — [*before they deploy to your users.*](#cool-now-how-does-it-fit-in-with-jamf)
 
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available **[here](lastmile/README.md) (a part of this repository)**. Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
 
@@ -66,7 +66,7 @@ It is! A network of networks, with some more networks inside those. Luckily, the
 
 If you’re just getting started with EC2 Mac, when you create your EC2 account, a default VPC is created in the Region your instance starts up in. Its default state is enough for what we’ll need to do to get started. 
 
-## AWS Regions( and Availability Zones)?
+## AWS Regions (and Availability Zones)?
 
 The AWS cloud is divided into physical regions, which are subdivided into Availability Zones, or AZs for short. See the diagram below: a region is made of many AZs, and each AZ itself is redundant too, made of multiple datacenters. **[See here for a comprehensive list of all regions and AZs.](https://aws.amazon.com/about-aws/global-infrastructure/regions_az/)**
 
@@ -78,7 +78,12 @@ The AWS cloud is divided into physical regions, which are subdivided into Availa
 
 ## Now there’s something about a security group.
 
-Security Groups can be thought of as firewalls: they’ll keep any incoming connections out unless you specify. When you’re launching your EC2 Mac instance, you can automatically create a group that’ll keep anything but port 22 out, which we can use to SSH (and later VNC) into our Mac. Keep in mind that Security Groups are *stateful*, which means that the Mac itself can still reach out to the internet (without an explicit denial in the rules), and can also accept incoming connections that itself has initiated. All that means a default Security Group is a good place to start.
+Security Groups can be thought of as firewalls: they’ll keep any incoming connections out unless you specify. When you’re launching your EC2 Mac instance, you can automatically create a group that’ll keep anything but port 22 out, which we can use to SSH (and later VNC) into our Mac. Keep in mind that Security Groups are *stateful*, which means that the Mac itself can still reach out to the internet (without an explicit denial in the rules), and can also accept incoming connections that itself has initiated. All that means a default Security Group is a good place to start. With port 22 open, now you can SSH and connect to your Mac instance!
+
+## I’m in! What about access to the GUI, though?
+
+Once you’re connected to your Mac instance, you can [use SSH to enable VNC access via macOS’ built-in Screen Sharing service.](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/steps/03_connect_and_enable.md) For enhanced GUI connectivity, check out our [step-by-step blog](https://aws.amazon.com/blogs/apn/amazon-ec2-mac-enhanced-remote-access-with-hp-anyware/)with HP Anyware (formerly Teradici), a macOS agent (x86 available today on [AWS Marketplace](https://aws.amazon.com/marketplace/pp/prodview-isaghmqny2wr6), Apple silicon launching 1/19) enabling secure, compressed, pixel-perfect remote screen sessions. Also, keep in mind, the flexibility of the cloud means there may not be a need to replace on-premises, physical developer devices with cloud EC2 Macs on a one-to-one basis. For example, if you have Apple developers located across geographical regions—great! Using an [auto-scaled shared pool of EC2 Macs](https://aws.amazon.com/blogs/compute/implementing-autoscaling-for-ec2-mac-instances/)for devs across time zones to launch an instance on (and terminate when done) can bring extra savings through the efficiencies gained. If this interests you or you’re ready to get going, let’s talk, as we have some great resources and experience to share—see below how to get in touch!
+
 
 ## Tell me more about security,  my InfoSec guys love that!
 
@@ -86,7 +91,7 @@ Of course! To start, EC2 Mac instances carry all the security that AWS brings; s
 
 ## One other thing: SSH key.
 
-Yes—for security, the AMIs launched do not have a password: they can only be accessed with an SSH key file. We’ll go into how to make one, download the key file, then use it to connect. EC2 Mac instances can be configured, just like any Mac, with multiple users and standard passwords—we’ll actually be setting one in our walkthrough later on in order to connect to the GUI.
+Yes—for security, the AMIs launched do not have a password: they can only be accessed with an SSH key file. In [the step-by-step instructions](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md) we’ll go into how to make one, download the key file, then use it to connect. EC2 Mac instances can be configured, just like any Mac, with multiple users and standard passwords—we’ll actually be setting one in our walkthrough later on in order to connect to the GUI.
 
 ## Cool! Now, how does it fit in with Jamf?
 
