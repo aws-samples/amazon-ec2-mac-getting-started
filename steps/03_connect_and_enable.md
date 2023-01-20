@@ -65,6 +65,11 @@ sudo passwd ec2-user
 
 Enable the Apple Remote Desktop (ARD) agent:
 
+For macOS 12 or later:
+```
+sudo launchctl enable system/com.apple.screensharing ; sudo launchctl load -w /System/Library/LaunchDaemons/com.apple.screensharing.plist
+```
+For macOS 11 or earlier
 ```
 sudo /System/Library/CoreServices/RemoteManagement/ARDAgent.app/Contents/Resources/kickstart -activate -configure -access -on \
 -configure -allowAccessFor -allUsers \
