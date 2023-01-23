@@ -7,7 +7,7 @@ This script was developed at AWS for Amazon EC2 Mac instances to present a demon
 ## Getting Started
 
 ### AWS Secrets Manager
-The main runtime of this script retrieves a secret (credentials/passwords) stored in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). This provides values for the Jamf URL (`jamfServerAddress`) and API credentials (`jamfEnrollmentUser`,`jamfEnrollmentPassword`) required to generate the profile. The EC2 instance needs an appropriate IAM profile applied to itself to read these secrets, as well.
+The main runtime of this script retrieves a secret (credentials/passwords) stored in [AWS Secrets Manager](https://aws.amazon.com/secrets-manager/). This secret (`jamfSecret` in the script) provides values for the Jamf URL (`jamfServerAddress`) and API credentials (`jamfEnrollmentUser`,`jamfEnrollmentPassword`) required to generate the profile. The EC2 instance needs an appropriate IAM profile applied to itself to read these secrets, as well.
 
 The Jamf API user account for LastMile *only* requires the **Create** permission for **Computer Invitations**, and none else. See below for an example of an IAM instance profile including the allowed appropriate access.
 
