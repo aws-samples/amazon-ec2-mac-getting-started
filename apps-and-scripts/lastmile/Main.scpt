@@ -110,7 +110,7 @@ if enrollmentCLI is null then
 	
 	--Retrieve credentials for Jamf enrollment from AWS Secrets Manager.
 	set currentRegion to (my awsMD("placement/region"))
-	set jamfServerDomain to my retrieveSecret(currentRegion, "jamfSecret", "jamfServerAddress")
+	set jamfServerDomain to my retrieveSecret(currentRegion, "jamfSecret", "jamfServerDomain")
 	set SDKUser to my retrieveSecret(currentRegion, "jamfSecret", "jamfEnrollmentUser")
 	set SDKPassword to my retrieveSecret(currentRegion, "jamfSecret", "jamfEnrollmentPassword")
 	
