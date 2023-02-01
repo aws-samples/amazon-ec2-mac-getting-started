@@ -2,12 +2,12 @@
 
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
-  * Access a Mac to test with whenever you might need one — [*within minutes.*](#im-in-what-about-access-to-the-gui-though)
+  * Access a Mac to develop and test with whenever you might need one — [*within minutes.*](#im-in-what-about-access-to-the-gui-though)
   * Switch between multiple macOS versions effortlessly — [*on the same Mac.*](#imaging)
   * Recreate user scenarios — [*in a safe, ephemeral, non-virtualized macOS environment.*](instance)
   * Test your macOS scripts and apps easily — [*before they hit production.*](#thats--cool-but-what-can-i-do-that-i-couldnt-do-before)
   * Build, test, sign, and publish your Apple apps in the cloud — [*forget the Mac-in-a-closet (or under a desk).*](#my-apps-and-automations-are-getting-more-complex-what-about-development)
-  * And, of course, integrate with device management to enroll and test complex workflows — [*before they deploy to your users.*](#cool-now-how-does-it-fit-in-with-jamf)
+  * And, of course, integrate with device management solutions like Jamf to enroll and test complex workflows — [*before they deploy to your users.*](#cool-now-how-does-it-fit-in-with-jamf)
 
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available **[here](lastmile/README.md) (a part of this repository)**. Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
 
