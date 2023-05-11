@@ -11,6 +11,8 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
 
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available **[here](lastmile/README.md) (a part of this repository)**. Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
 
+*Coming Soon: we'll be adding a repository with directions and code for **automatic enrollment** when an instance starts. Stay tuned here, or contact us via [email](mailto:ec2-mac-wwso@amazon.com) for more information!*
+
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
 
 ---
