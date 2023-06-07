@@ -1,5 +1,11 @@
 # An Introduction to Developing Apps & Scripts with EC2 Mac
 
+### *New: In the area? Please join the AWS and Jamf team in-person at [Jamf Nation Live Europe](https://www.jamf.com/events/jamf-nation-live/):*
+- [9th June, London, Tobacco Dock](https://www.jamf.com/events/jamf-nation-live-london-2023/)
+- [13th June, Wiesbaden, RheinMain](https://www.jamf.com/de/veranstaltungen/jamf-nation-live-rheinmain-2023/)
+- [15th June, Paris, 3 Mazarium](https://www.jamf.com/fr/evenements/jamf-nation-live-paris-2023/)
+- [20th June, Amsterdam, Taets](https://www.jamf.com/events/jamf-nation-live-amsterdam-2023/)
+
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
   * Access a Mac to develop and test with whenever you might need one — [*within minutes.*](#im-in-what-about-access-to-the-gui-though)
