@@ -13,10 +13,13 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [The official documentation on EC2 Mac Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) is the best place to start for most up-to-date technical content!
 - [Getting Started with Amazon EC2 Mac instances: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here—this page is a part of it!)
 - [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
+- [Amazon EC2 Mac MDM Enrollment Automation: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 #### Blogs:
-- <sup>New!</sup> [About Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
-- <sup>New!</sup> [Announcing General Availability of Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
+- <sup>New!</sup> [Announcing general availability of Amazon EC2 M2 Mac instances for macOS](https://aws.amazon.com/about-aws/whats-new/2023/10/general-availability-amazon-ec2-m2-mac-instances-mac-os/)
+- <sup>New!</sup> [Amazon EC2 M2 Pro Mac Instances Built on Apple Silicon M2 Pro Mac Mini Computers](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m2-pro-mac-instances-built-on-apple-silicon-m2-pro-mac-mini-computers/)
+- [About Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
+- [Announcing General Availability of Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
 - [Access Amazon EFS file systems from EC2 Mac instances](https://aws.amazon.com/about-aws/whats-new/2021/02/access-amazon-efs-file-systems-from-ec2-mac-instances-running-macos-big-sur?)
 - [EC2 Mac instances now support macOS Big Sur AMIs](https://aws.amazon.com/about-aws/whats-new/2021/02/amazon-ec2-mac-instances-now-support-macos-big-sur)
 - [Jeff Barr’s blog: Use Amazon EC2 Mac Instances to Build & Test macOS, iOS, iPadOS, tvOS, and watchOS Apps](https://aws.amazon.com/blogs/aws/new-use-mac-instances-to-build-test-macos-ios-ipados-tvos-and-watchos-apps)
