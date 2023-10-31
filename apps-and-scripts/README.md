@@ -1,8 +1,19 @@
 # An Introduction to Developing Apps & Scripts with EC2 Mac
 
-### <sup>New!</sup> Join the AWS and Jamf team live and in-person!
-- [MacAdmins Conference](https://macadmins.psu.edu/), Penn State University, US July 18–21
-- [Jamf Nation User Conference](https://www.jamf.com/events/jamf-nation-user-conference/), Austin, TX, US September 19–21
+#### <sup>New!</sup>  Enroll your EC2 Mac instances in MDM (using the Jamf Pro API): [`enroll-ec2-mac` is now available.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
+
+---
+
+#### Join the AWS team live and in-person!
+* Check out the EC2 Mac sessions at [re:Invent 2023](https://reinvent.awsevents.com/)
+  * Customer insights: Apple app development with Amazon EC2 Mac instances (Monday)
+  * CI/CD pipelines with EC2 Mac instances to accelerate testing cycles (Tuesday)
+  * Accelerate Apple application development with Amazon EC2 Mac instances (Wednesday)
+  * Automating and managing EC2 Mac instances at scale (Wednesday)
+  * Apple on AWS: Managing dev environments on Amazon EC2 Mac instances (Thursday)
+
+
+
 
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
@@ -13,9 +24,8 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
   * Build, test, sign, and publish your Apple apps in the cloud — [*forget the Mac-in-a-closet (or under a desk).*](#my-apps-and-automations-are-getting-more-complex-what-about-development)
   * And, of course, integrate with device management solutions like Jamf to enroll and test complex workflows — [*before they deploy to your users.*](#cool-now-how-does-it-fit-in-with-jamf)
 
-On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. The script that’s being run below is called LastMile and enables guided MDM enrollment, with source available **[here](lastmile/README.md) (a part of this repository)**. Take a look at the below demo video to see how you can start an EC2 Mac instance, connect to it, and easily enroll it into Jamf, all in a few commands. 
+On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. MDM enrollment can now automatically occur when an instance starts. The process involves a script and light image setup, with full setup instructions and templates [here.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
-*Coming Soon: we'll be adding a repository with directions and code for **automatic enrollment** when an instance starts. Stay tuned here, or contact us via [email](mailto:ec2-mac-wwso@amazon.com) for more information!*
 
 <a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
 
@@ -101,7 +111,7 @@ Yes—for security, the AMIs launched do not have a password: they can only be a
 
 ## Cool! Now, how does it fit in with Jamf?
 
-AWS announced our partnership with Jamf in mid-2022, starting with **[enrollment](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)**, and have added **[support and integration for Jamf Private Access](https://www.jamf.com/resources/press-releases/jamf-announces-new-integration-with-aws/)**. New for 2023, **[LastMile](lastmile/README.md)** is a script that guides a user to complete profile-based enrollment to allow configuration profiles, System Extensions, and much more. We’re constantly working on new integrations, too—stay tuned to this page for more!
+AWS announced our partnership with Jamf in mid-2022, starting with **[agent-based enrollment](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)**, and have added **[support and integration for Jamf Private Access](https://www.jamf.com/resources/press-releases/jamf-announces-new-integration-with-aws/)**. Full automation is now available in [the `amazon-ec2-mac-mdm-enrollment-automation` repository here.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 ## My apps and automations are getting more complex, what about development?
 
