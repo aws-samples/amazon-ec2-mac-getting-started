@@ -32,6 +32,7 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 
 #### Partner Blogs:
 
+- [Simplifying Mobile Device Management for Apple Devices with Jamf Pro](https://aws.amazon.com/blogs/apn/simplifying-mobile-device-management-for-apple-devices-with-jamf-pro/)
 - [Implementing macOS Build Agents into TeamCity Using Amazon EC2 Mac Instances](https://aws.amazon.com/blogs/apn/implementing-macos-build-agents-into-teamcity-using-amazon-ec2-mac-instances/)
 - [Automate the Enrollment of EC2 Mac Instances into Jamf Pro](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)
 - [Amazon EC2 Mac Enhanced Remote Access with HP Anyware](https://aws.amazon.com/blogs/apn/amazon-ec2-mac-enhanced-remote-access-with-hp-anyware/)
