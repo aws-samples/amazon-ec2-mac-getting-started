@@ -1,6 +1,6 @@
 # An Introduction to Developing Apps & Scripts with EC2 Mac
 
-#### <sup>New!</sup>  Enroll your EC2 Mac instances in MDM (using the Jamf Pro API): [`enroll-ec2-mac` is now available.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
+#### Please note: [`enroll-ec2-mac` is now available, and fully automates MDM enrollment on EC2 Mac.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 ---
 
