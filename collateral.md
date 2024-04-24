@@ -51,7 +51,6 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [Amazon EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
 - [AWS on Air: Amazon EC2 Mac M1 Preview Launch & Demo](https://www.twitch.tv/videos/1222154674?t=00h22m30s)
 
-
 #### Tutorials:
 
 - [10 minute tutorial: Launch and Connect to an Amazon EC2 Mac Instance](https://aws.amazon.com/getting-started/hands-on/?getting-started-all.sort-by=item.additionalFields.sortOrder&getting-started-all.sort-order=asc&awsf.getting-started-category=category%23compute&awsf.getting-started-level=*all&awsf.getting-started-content-type=*all&getting-started-all.q=launch%2Band%2Bconnect%2Bmac&getting-started-all.q_operator=AND)
