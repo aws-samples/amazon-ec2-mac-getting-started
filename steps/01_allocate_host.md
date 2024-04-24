@@ -2,7 +2,7 @@
 
 ### **Before you begin:**
 
-* Ensure that you have checked the [Service Quotas Console](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas) for **Running Dedicated mac1 Hosts** and **Running Dedicated mac2 Hosts**, and that the **Applied Quota Value** is *not **zero (0)***.
+* Ensure that you have checked the [Service Quotas Console](https://console.aws.amazon.com/servicequotas/home/services/ec2/quotas) for **Running Dedicated mac1/mac2/mac2-m2/mac2-m2pro Hosts**, and that the **Applied Quota Value** for your desired instance type is *not **zero (0)***.
 
     <img src="../img/service_quotas_console.png" width="500" alt="The Service Quotas Console with 'mac1' typed into the search bar.">
 
@@ -20,10 +20,10 @@
 
     <img src="../img/dedicated_host_console_2.png" width="800" alt="The EC2 Dedicated Host console with the Allocate button highlighted.">
 
-* Choose a name tag and availability zones for your host. Select the appropriate instance type for your desired architecture (x86-based EC2 Mac instances are **mac1.metal**, M1-based EC2 Mac instances are **mac2.metal**). 
+* Choose a name tag and availability zones for your host. Select the appropriate instance type for your desired architecture (x86-based EC2 Mac instances are **mac1.metal**, M1-based EC2 Mac instances are **mac2.metal**, M2-based instances are **mac2-m2.metal** and M2 Pro-based instances are **mac2-m2pro.metal**). 
 
 
-* * **Support multiple instance types** is not supported with EC2 Mac and must be un-checked. Under the **Instance Type** dropdown that appears after un-checking, choose the only option that appears: mac1.metal or mac2.metal, respectively.
+* * **Support multiple instance types** is not supported with EC2 Mac and must be un-checked. Under the **Instance Type** dropdown that appears after un-checking, choose the only option that appears to match the host type.
 
 
 * * **Host maintenance** is currently **not** supported with EC2 Mac and *must be **un-checked***.
