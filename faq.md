@@ -122,7 +122,7 @@
 
 1. <a name="update-os">**Can you apply OS and software updates to your Mac instances directly from Apple Update Servers?**</a>
 
-    Automatic Software Updates will be turned off by default on macOS AMIs. However, you can turn them on to download the latest macOS and Apple Software updates. 
+    Automatic Software Updates are turned off by default on macOS AMIs. However, you can turn them on to download the latest macOS and Apple Software updates. [See this documentation for how to do so.](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-updates)
 
 1. <a name="nitro">**Do EC2 Mac instances support the Nitro system?**</a>
 
