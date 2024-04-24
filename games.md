@@ -10,7 +10,4 @@ Another benefit is the ability to consolidate build pipelines for Android, Windo
 
 For testimonials from Games customers such as Riot Games, MPL Games, and Start Stable Entertainment, see [our ‘Customers’ section.](https://aws.amazon.com/ec2/instance-types/mac)
 
-
-**Coming Soon!** EC2 Mac CI/CD workshop at [re:Invent 2021](https://reinvent.awsevents.com/): _“Develop, Build, & Test iOS Games on EC2 Mac Instances”_
-
 ---
