@@ -2,9 +2,9 @@
 
 ### **Before you begin:**
 
-* Ensure that you have allocated a mac1 or mac2 Dedicated Host as described [here](01_allocate_host.md).
+* Ensure that you have allocated an EC2 Mac Dedicated Host as described [here](01_allocate_host.md).
 
-* Ensure that the IAM User or Role you are using has  [EC2:LaunchInstances](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-actions-as-permissions) permission.
+* Ensure that the IAM User or Role you are using has [EC2:LaunchInstances](https://docs.aws.amazon.com/service-authorization/latest/reference/list_amazonec2.html#amazonec2-actions-as-permissions) permission.
 
 ---
 ### **Using the AWS Management Console:**
