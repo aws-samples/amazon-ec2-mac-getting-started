@@ -64,7 +64,7 @@ Yes, imaging! While a deprecated practice for general Mac management, it’s aga
 
 ## You mentioned hardware, what are the specs on these Macs?
 
-As for the EC2 Mac Dedicated Host hardware, there’s two types available: **Mac1** is a 2018 Mac mini with 12-core x86 and 32GB RAM. **Mac2** is a 2020 Mac mini with Apple’s M1 chip and 16GB RAM. The instance you spin up on top of the Dedicated Host is referred to as “mac1.metal” or “mac2.metal.“ The **metal** in the instance name means that you’re able to use all of the underlying Mac mini hardware without any virtualization layer: bare-metal. 
+As for the EC2 Mac Dedicated Host hardware, there’s a few types available: **Mac1** is a 2018 Mac mini with 12-core x86 and 32GB RAM. **Mac2** is a 2020 Mac mini with Apple’s M1 chip and 16GB RAM. **Mac2-m2** is a 2023 Mac mini with Apple’s M2 chip and 24GB RAM. **Mac2-m2pro** is a 2023 Mac mini with Apple’s M2 Pro chip and 32GB RAM. The instance you spin up on top of the Dedicated Host adds .metal to the end (e.g. mac1.metal, mac2-m2.metal, etc.). The **metal** in the instance name means that you’re able to use all of the underlying Mac mini hardware without any virtualization layer: bare-metal. 
 
 ## That’s  cool, but what can I do that I couldn't do before?
 
@@ -91,6 +91,10 @@ The AWS cloud is divided into physical regions, which are subdivided into Availa
 * **x86-based EC2 Mac instances** are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland, Frankfurt, London, Stockholm), and Asia Pacific (Singapore, Seoul, Tokyo, Mumbai, and Sydney). 
 
 * **M1-based EC2 Mac instances** are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Ireland), and Asia Pacific (Singapore).
+
+* **M2-based EC2 Mac instances** are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), Europe (Frankfurt), and Asia Pacific (Sydney).
+
+* **M2 Pro-based EC2 Mac instances** are available across the following AWS Regions: US East (N. Virginia, Ohio), US West (Oregon), and Asia Pacific (Sydney).
 
 ## Now there’s something about a security group.
 
