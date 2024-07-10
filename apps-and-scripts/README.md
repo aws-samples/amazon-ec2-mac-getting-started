@@ -5,15 +5,7 @@
 ---
 
 #### Join the AWS team live and in-person!
-* Check out the EC2 Mac sessions at [re:Invent 2023](https://reinvent.awsevents.com/)
-  * Customer insights: Apple app development with Amazon EC2 Mac instances (Monday)
-  * CI/CD pipelines with EC2 Mac instances to accelerate testing cycles (Tuesday)
-  * Accelerate Apple application development with Amazon EC2 Mac instances (Wednesday)
-  * Automating and managing EC2 Mac instances at scale (Wednesday)
-  * Apple on AWS: Managing dev environments on Amazon EC2 Mac instances (Thursday)
-
-
-
+* Check out the [EC2 Mac session at the upcoming Jamf Nation User Conference (JNUC) 2024!](https://reg.jnuc.jamf.com/flow/jamf/jnuc2024/sessioncatalog2024/page/sessioncatalog/session/1715273365922001uWTL)
 
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
@@ -64,7 +56,7 @@ Yes, imaging! While a deprecated practice for general Mac management, it’s aga
 
 ## You mentioned hardware, what are the specs on these Macs?
 
-As for the EC2 Mac Dedicated Host hardware, there’s a few types available: **Mac1** is a 2018 Mac mini with 12-core x86 and 32GB RAM. **Mac2** is a 2020 Mac mini with Apple’s M1 chip and 16GB RAM. **Mac2-m2** is a 2023 Mac mini with Apple’s M2 chip and 24GB RAM. **Mac2-m2pro** is a 2023 Mac mini with Apple’s M2 Pro chip and 32GB RAM. The instance you spin up on top of the Dedicated Host adds .metal to the end (e.g. mac1.metal, mac2-m2.metal, etc.). The **metal** in the instance name means that you’re able to use all of the underlying Mac mini hardware without any virtualization layer: bare-metal. 
+As for the EC2 Mac Dedicated Host hardware, there’s a few types available: **Mac1** is a 2018 Mac mini with 12-core x86 and 32GB RAM. Any instance that starts with **Mac2** is an Apple silicon instance: **Mac2** is a 2020 Mac mini with Apple’s M1 chip and 16GB RAM. **Mac2-m2** is a 2023 Mac mini with Apple’s M2 chip and 24GB RAM. **Mac2-m2pro** is a 2023 Mac mini with Apple’s M2 Pro chip and 32GB RAM. The instance you spin up on top of the Dedicated Host adds .metal to the end (e.g. mac1.metal, mac2-m2.metal, etc.). The **metal** in the instance name means that you’re able to use all of the underlying Mac mini hardware without any virtualization layer: bare-metal. 
 
 ## That’s  cool, but what can I do that I couldn't do before?
 
