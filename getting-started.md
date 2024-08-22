@@ -60,15 +60,15 @@ When stopping or terminating an EC2 Mac instance, it goes through a thorough scr
 
 ## Release your hosts!
 
-If a host is sitting in your account, unless it is in the 
+If a host is sitting in your account, unless its status is *Pending* or *Released*, it is being billed for. A host cannot be actively running an instance to 
 
 
 * Managing hardware:
     * AWS CLI w/samples
         * Allocate/Release
-            * Lambda releaser? Could come with the info about billing wrt instance running status
+            * ASG link
         * Start/Stop/Terminate
-        * Connect (SSH,` instance-connect open-tunnel` with documented ports[!!!])
+        * Connect (SSH,` instance-connect open-tunnel` with documented ports)
         * SIP disable
     * CDK?
     * API?
