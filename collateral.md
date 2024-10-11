@@ -3,11 +3,13 @@
 Here is a list of content that the Amazon EC2 Mac team has created. If there is specific content you'd like to see, or if you have feedback on this content, please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), a [re:Post](https://repost.aws/) with tag #ec2mac, or reach out via [email](mailto:ec2-mac-wwso@amazon.com).
 
 #### Customer Stories:
-- Snowflake (Written Case Study)[https://medium.com/snowflake/macos-ci-cd-with-tart-d3c0e511f3c9]: macOS CI/CD with Tart
-- Airbnb ([Written Case Study)](https://medium.com/airbnb-engineering/flexible-continuous-integration-for-ios-4ab33ea4072f): Flexible Continuous Integration for iOS
-- Pinterest ([Written Case Study](https://aws.amazon.com/solutions/case-studies/pinterest-ec2-mac-instances-case-study/) and [Video Tech Talk](https://www.youtube.com/watch?v=f2rDM8p8oNE)): How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances
-- Goldman Sachs ([Blog](https://developer.gs.com/blog/mobile-cicd-with-ec2-macos/) and [Video](https://www.youtube.com/watch?v=i9b7UtenFlA)): How Goldman Sachs streamlined, centralized, and automated their CI/CD pipeline with Amazon EC2 Mac instances
-- Flipboard ([Written Article](https://www.wired.com/sponsored/story/bye-bye-bender/) and [Video Talk](https://www.youtube.com/watch?v=HMmu9sHLfgk&t=8s)): How Flipboard improved their build speed by 4x with Amazon EC2 Mac instances
+- Just Eat Takeaway [Written Case Study](https://medium.com/justeattakeaway-tech/scalable-continuous-integration-for-ios-15ff33435992): Scalable Continuous Integration for iOS
+- Snowflake [Written Case Study](https://medium.com/snowflake/macos-ci-cd-with-tart-d3c0e511f3c9): macOS CI/CD with Tart
+- Airbnb [Written Case Study](https://medium.com/airbnb-engineering/flexible-continuous-integration-for-ios-4ab33ea4072f): Flexible Continuous Integration for iOS
+- Southwest Airlines [Written Case Study](https://aws.amazon.com/solutions/case-studies/southwest-devicefarm-ec2-case-study/): Southwest Airlines Scales App Development Using AWS Device Farm & Amazon EC2 Mac Instances
+- Pinterest [Written Case Study](https://aws.amazon.com/solutions/case-studies/pinterest-ec2-mac-instances-case-study/) and [Video Tech Talk](https://www.youtube.com/watch?v=f2rDM8p8oNE)): How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances
+- Goldman Sachs [Blog](https://developer.gs.com/blog/mobile-cicd-with-ec2-macos/) and [Video](https://www.youtube.com/watch?v=i9b7UtenFlA)): How Goldman Sachs streamlined, centralized, and automated their CI/CD pipeline with Amazon EC2 Mac instances
+- Flipboard [Written Article](https://www.wired.com/sponsored/story/bye-bye-bender/) and [Video Talk](https://www.youtube.com/watch?v=HMmu9sHLfgk&t=8s)): How Flipboard improved their build speed by 4x with Amazon EC2 Mac instances
 - Intuit [Video Talk](https://www.youtube.com/watch?v=rlmaJVy2DVw): How Intuit leverages Amazon EC2 Mac instances for macOS/Xcode development with up to 30 percent better performance over data center infrastructure.
   - You can find more customer & partner stories on our [EC2 Mac Product Page.](https://aws.amazon.com/ec2/instance-types/mac/)
 
