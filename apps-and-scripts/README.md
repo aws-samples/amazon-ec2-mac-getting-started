@@ -1,6 +1,6 @@
 # An Introduction to Developing Apps & Scripts with EC2 Mac
 
-#### Please note: [`enroll-ec2-mac` is now available, and fully automates MDM enrollment on EC2 Mac.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
+### Please note: [`enroll-ec2-mac` is available for automated MDM enrollment on EC2 Mac.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 ---
 
