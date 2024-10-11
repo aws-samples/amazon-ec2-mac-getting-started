@@ -19,7 +19,7 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. MDM enrollment can now automatically occur when an instance starts. The process involves a script and light image setup, with full setup instructions and templates [here.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 
-<a href="https://www.youtube.com/watch?v=8JOCR7-cOjc" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/sc2-mac-zt.png" width="800" alt="YouTube preview of Launch and zero-touch enroll Amazon EC2 Mac into Jamf video"/></a>
+<a href="https://www.youtube.com/watch?v=8JOCR7-cOjc" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/ec2-mac-zt.png" width="800" alt="YouTube preview of Launch and zero-touch enroll Amazon EC2 Mac into Jamf video"/></a>
 
 ---
 #### If you are an experienced user in AWS, awesome! **[Check out our guide to starting your first EC2 Mac instance here!](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md)**
