@@ -3,21 +3,24 @@
 Here is a list of content that the Amazon EC2 Mac team has created. If there is specific content you'd like to see, or if you have feedback on this content, please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), a [re:Post](https://repost.aws/) with tag #ec2mac, or reach out via [email](mailto:ec2-mac-wwso@amazon.com).
 
 #### Customer Stories:
+- Snowflake (Written Case Study)[https://medium.com/snowflake/macos-ci-cd-with-tart-d3c0e511f3c9]: macOS CI/CD with Tart
+- Airbnb ([Written Case Study)](https://medium.com/airbnb-engineering/flexible-continuous-integration-for-ios-4ab33ea4072f): Flexible Continuous Integration for iOS
 - Pinterest ([Written Case Study](https://aws.amazon.com/solutions/case-studies/pinterest-ec2-mac-instances-case-study/) and [Video Tech Talk](https://www.youtube.com/watch?v=f2rDM8p8oNE)): How Pinterest Modernized iOS Build Infrastructure with Amazon EC2 Mac Instances
 - Goldman Sachs ([Blog](https://developer.gs.com/blog/mobile-cicd-with-ec2-macos/) and [Video](https://www.youtube.com/watch?v=i9b7UtenFlA)): How Goldman Sachs streamlined, centralized, and automated their CI/CD pipeline with Amazon EC2 Mac instances
 - Flipboard ([Written Article](https://www.wired.com/sponsored/story/bye-bye-bender/) and [Video Talk](https://www.youtube.com/watch?v=HMmu9sHLfgk&t=8s)): How Flipboard improved their build speed by 4x with Amazon EC2 Mac instances
 - Intuit [Video Talk](https://www.youtube.com/watch?v=rlmaJVy2DVw): How Intuit leverages Amazon EC2 Mac instances for macOS/Xcode development with up to 30 percent better performance over data center infrastructure.
-- - You can find more customer & partner stories on our [EC2 Mac Product Page.](https://aws.amazon.com/ec2/instance-types/mac/)
+  - You can find more customer & partner stories on our [EC2 Mac Product Page.](https://aws.amazon.com/ec2/instance-types/mac/)
 
 #### Technical Resources:
 - [The official documentation on EC2 Mac Instances](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html) is the best place to start for most up-to-date technical content!
 - [Getting Started with Amazon EC2 Mac instances: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here—this page is a part of it!)
-- [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 - [Amazon EC2 Mac MDM Enrollment Automation: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
+- [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 
 #### Blogs:
-- <sup>New!</sup> [Announcing general availability of Amazon EC2 M2 Mac instances for macOS](https://aws.amazon.com/about-aws/whats-new/2023/10/general-availability-amazon-ec2-m2-mac-instances-mac-os/)
-- <sup>New!</sup> [Amazon EC2 M2 Pro Mac Instances Built on Apple Silicon M2 Pro Mac Mini Computers](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m2-pro-mac-instances-built-on-apple-silicon-m2-pro-mac-mini-computers/)
+- [Quickly Restore Amazon EC2 Mac Instances using Replace Root Volume capability](https://aws.amazon.com/blogs/compute/new-reset-amazon-ec2-mac-instances-to-a-known-state-using-replace-root-volume-capability/)
+- [Announcing general availability of Amazon EC2 M2 Mac instances for macOS](https://aws.amazon.com/about-aws/whats-new/2023/10/general-availability-amazon-ec2-m2-mac-instances-mac-os/)
+- [Amazon EC2 M2 Pro Mac Instances Built on Apple Silicon M2 Pro Mac Mini Computers](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m2-pro-mac-instances-built-on-apple-silicon-m2-pro-mac-mini-computers/)
 - [About Amazon EC2 M1 Mac instances](https://aws.amazon.com/blogs/aws/new-amazon-ec2-m1-mac-instances/)
 - [Announcing General Availability of Amazon EC2 M1 Mac instances](https://aws.amazon.com/about-aws/whats-new/2022/07/general-availability-amazon-ec2-m1-mac-instances-macos/)
 - [Access Amazon EFS file systems from EC2 Mac instances](https://aws.amazon.com/about-aws/whats-new/2021/02/access-amazon-efs-file-systems-from-ec2-mac-instances-running-macos-big-sur?)
@@ -42,11 +45,13 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [Terraform's AWS support for EC2 Dedicated Hosts (including EC2 Mac)](https://github.com/hashicorp/terraform-provider-aws/issues/10752)
 
 #### Videos:
+- <sup>New!</sup> [Build, test, sign, and publish generative AI Vision Pro apps with EC2 Mac](https://www.youtube.com/watch?v=MzLWF-MfdTw)
+- <sup>New!</sup> [Launch and zero-touch enroll Amazon EC2 Mac into Jamf](https://www.youtube.com/watch?v=8JOCR7-cOjc)
 - [90-second Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
 - Amazon EC2 Mac tech tutorials:
-- - [Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
-- - [Part 2 - How to Use Block and File Storage](https://www.youtube.com/watch?v=--BfdlnIc7Y)
-- - [Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
+  - [Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
+  - [Part 2 - How to Use Block and File Storage](https://www.youtube.com/watch?v=--BfdlnIc7Y)
+  - [Part 3 - macOS Workers with Kubernetes and Jenkins](https://www.youtube.com/watch?v=XWcCzqEemQQ)
 - [Connect to a Mac1 Amazon EC2 instance with VNC](https://www.youtube.com/watch?v=FtU2_bBfSgM)
 - [Amazon EC2 Mac Instances Launch - macOS in the cloud for the first time, with the benefits of EC2](https://www.youtube.com/watch?v=Pn3miC_tTH0)
 - [AWS on Air: Amazon EC2 Mac M1 Preview Launch & Demo](https://www.twitch.tv/videos/1222154674?t=00h22m30s)
@@ -57,6 +62,7 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 
 #### Workshops:
 
+- [Amazon EC2 Mac Workshop](https://catalog.workshops.aws/ec2mac) : Launched at re:Invent '23, this latest workshop features hands-on EC2 Mac imaging, auto scaling, and MDM enrollment. 
 - [Amazon EC2 Mac instances - CI/CD workshop](https://catalog.us-east-1.prod.workshops.aws/v2/workshops/5ced3c00-8e8a-4c4d-82fa-ca1b7804ea4d/en-US) : Launched at re:Invent '21, includes artifacts to help you get hands on with EC2 Mac and experience it for yourself.
 
 
@@ -67,8 +73,8 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 
 #### Documentation:
 
-- [EC2 Mac Scrubbing workflow details](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-stop)
-- [How to connect to an EC2 Mac Instance over VNC](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#mac-instance-vnc)
-- [Details on EC2 Mac AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#ec2-macos-images)
+- [EC2 Mac Scrubbing workflow details](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/mac-instance-stop.html)
+- [How to connect to an EC2 Mac Instance over VNC](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/connect-to-mac-instance.html#mac-instance-vnc)
+- [Details on EC2 Mac AMIs](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/macos-ami-overview.html)
 
 ---
