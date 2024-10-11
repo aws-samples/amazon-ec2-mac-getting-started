@@ -1,12 +1,11 @@
-# An Introduction to Developing Apps & Scripts with EC2 Mac
+# An Introduction to EC2 Mac
 
 ### Please note: [`enroll-ec2-mac` is available for EC2 Mac autoenrollment to Apple MDMs such as Jamf.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 ### Check out [this YouTube video](https://www.youtube.com/watch?v=8JOCR7-cOjc) for a full walkthrough!
 
 ---
 
-#### Join the AWS team live and in-person!
-* Check out the [EC2 Mac session at the upcoming Jamf Nation User Conference (JNUC) 2024!](https://reg.jnuc.jamf.com/flow/jamf/jnuc2024/sessioncatalog2024/page/sessioncatalog/session/1715273365922001uWTL)
+* Check out the [EC2 Mac session at the Jamf Nation User Conference (JNUC) 2024!](https://reg.jnuc.jamf.com/flow/jamf/jnuc2024/sessioncatalog2024/page/sessioncatalog/session/1715273365922001uWTL)
 
 Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances (we’ll get into what that means further down) allow you to accelerate your workflow and accomplish things that have ranged from challenging to near-impossible without foresight. Specifically, we’ll focus on how EC2 Mac instances let you:
 
@@ -20,7 +19,7 @@ Hi! We’re glad to have you here. We want to share how Amazon EC2 Mac instances
 On that last one: this workflow is thanks to our recent partnerships—see the recent announcement by AWS and Jamf **[here](https://www.jamf.com/resources/press-releases/jamf-works-with-aws-to-manage-and-provide-an-added-layer-of-security-to-amazon-ec2-mac-instances-at-scale/)** and the launch blog by Jamf, Wipro, and AWS **[here](https://aws.amazon.com/blogs/apn/automate-the-enrollment-of-ec2-mac-instances-into-jamf-pro/)**. MDM enrollment can now automatically occur when an instance starts. The process involves a script and light image setup, with full setup instructions and templates [here.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 
 
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=q7wDxF0bLFY" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/m1_and_lastmile_preview.png" width="800" alt="YouTube preview of Amazon EC2 Mac M1 and script LastMile"/></a>
+<a href="https://www.youtube.com/watch?v=8JOCR7-cOjc" target="_blank"><img src="https://github.com/aws-samples/amazon-ec2-mac-getting-started/raw/main/img/sc2-mac-zt.png" width="800" alt="YouTube preview of Launch and zero-touch enroll Amazon EC2 Mac into Jamf video"/></a>
 
 ---
 #### If you are an experienced user in AWS, awesome! **[Check out our guide to starting your first EC2 Mac instance here!](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/ec2-macos.md)**
