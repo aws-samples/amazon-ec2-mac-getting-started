@@ -1,3 +1,5 @@
+# Amazon EC2 Mac Instances
+
 ## **Welcome!**
 
 *We’re happy you’re here!* 
@@ -14,9 +16,7 @@ This repository should help you get up-and-running with Amazon EC2 Mac Instances
 " target="_blank"><img src="img/animated_explainer_preview.png" width="800"
 alt="YouTube preview of animated Amazon EC2 Mac explainer video"/></a>
 
-x86-based EC2 Mac instances are built on Apple Mac mini (2018) computers, featuring Intel Core i7 processors, and are powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/). They offer a choice of *macOS Mojave (10.14), macOS Catalina (10.15), macOS Big Sur (11),  macOS Monterey (12), macOS Ventura (13), and macOS Sonoma (14)* as Amazon Machine Images (AMIs). 
-
-M1-based EC2 Mac instances are built on Apple M1 Mac mini (2020) computers and are also powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/). EC2 M1 Mac instances enable Arm64 macOS environments for the first time on AWS and support *macOS Big Sur (11),  macOS Monterey (12), macOS Ventura (13), and macOS Sonoma (14)* as Amazon Machine Images (AMIs).
+EC2 Mac instances are built on Apple Mac mini and Mac Studio computers, and are powered by the [AWS Nitro System](https://aws.amazon.com/ec2/nitro/). They offer a choice of x86 or Apple Silicon hardware, enabling support for x86 and Arm65 macOS environments on *macOS Mojave (10.14) (x86 only), macOS Catalina (10.15) (x86 only), macOS Big Sur (11), macOS Monterey (12), macOS Ventura (13), macOS Sonoma (14), and macOS Sequoia (15)* as Amazon Machine Images (AMIs). 
 
 <img src="img/nitro-mac-full-image.png" width="800" alt="A Mac Mini inside a rack sled, connected to the AWS Nitro System via Thunderbolt 3">
 
@@ -26,7 +26,7 @@ Much of the work behind EC2 Mac instances ensures they behave like any other EC2
 ### **Getting Started with Amazon EC2 Mac Instances**
 ---
 
-#### **⇢ Start [here](ec2-macos.md) to get up-and-running with EC2 Mac!**
+#### **⇢ Start [here](ec2-macos.md) to get up and running with EC2 Mac!**
 
 ---
 ### **Ready to go a bit deeper? Take a read!**

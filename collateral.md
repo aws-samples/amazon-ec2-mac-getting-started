@@ -18,6 +18,7 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [Getting Started with Amazon EC2 Mac instances: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here—this page is a part of it!)
 - [Amazon EC2 Mac MDM Enrollment Automation: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 - [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
+- [Build Your iOS Applications Faster with a CI/CD Pipeline](https://community.aws/content/2duRxOl9WuYETq6dMhAQQ1kDZLr/cicd-for-ios-app)
 
 #### Blogs:
 - [Quickly Restore Amazon EC2 Mac Instances using Replace Root Volume capability](https://aws.amazon.com/blogs/compute/new-reset-amazon-ec2-mac-instances-to-a-known-state-using-replace-root-volume-capability/)
@@ -47,8 +48,9 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [Terraform's AWS support for EC2 Dedicated Hosts (including EC2 Mac)](https://github.com/hashicorp/terraform-provider-aws/issues/10752)
 
 #### Videos:
-- <sup>New!</sup> [Build, test, sign, and publish generative AI Vision Pro apps with EC2 Mac](https://www.youtube.com/watch?v=MzLWF-MfdTw)
-- <sup>New!</sup> [Launch and zero-touch enroll Amazon EC2 Mac into Jamf](https://www.youtube.com/watch?v=8JOCR7-cOjc)
+- <sup>New!</sup> [Rapidly test your Apple apps on-device using remote USB and Amazon EC2 Mac](https://youtu.be/wZ3HHn1uAiI?si=B7asN8KQ93hh3fNL)
+- [Build, test, sign, and publish generative AI Vision Pro apps with EC2 Mac](https://www.youtube.com/watch?v=MzLWF-MfdTw)
+- [Launch and zero-touch enroll Amazon EC2 Mac into Jamf](https://www.youtube.com/watch?v=8JOCR7-cOjc)
 - [90-second Overview of Amazon EC2 Mac Instances](https://www.youtube.com/watch?v=d0FulqrjHkk)
 - Amazon EC2 Mac tech tutorials:
   - [Part 1 - Getting Started](https://www.youtube.com/watch?v=_pjl7PAsCPI)
