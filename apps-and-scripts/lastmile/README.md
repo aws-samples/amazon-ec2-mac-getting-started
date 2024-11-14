@@ -1,3 +1,7 @@
+## Please note: a newer script, [`enroll-ec2-mac`, is available for EC2 Mac autoenrollment to Apple MDMs such as Jamf.](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation), with a zero-touch enrollment workflow.
+## Check out [this YouTube video](https://www.youtube.com/watch?v=8JOCR7-cOjc) for a full walkthrough on how to spin up and implement!
+
+
 # LastMile
 
 This repository contains LastMile, a script to download updated enrollment profiles from a Jamf mobile device management server, then open and present the acceptance workflow to the user. 
