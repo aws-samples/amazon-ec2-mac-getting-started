@@ -1,3 +1,5 @@
+# Amazon EC2 Mac Instances
+
 ## **Welcome!**
 
 *We’re happy you’re here!* 
@@ -24,7 +26,7 @@ Much of the work behind EC2 Mac instances ensures they behave like any other EC2
 ### **Getting Started with Amazon EC2 Mac Instances**
 ---
 
-#### **⇢ Start [here](ec2-macos.md) to get up-and-running with EC2 Mac!**
+#### **⇢ Start [here](ec2-macos.md) to get up and running with EC2 Mac!**
 
 ---
 ### **Ready to go a bit deeper? Take a read!**
