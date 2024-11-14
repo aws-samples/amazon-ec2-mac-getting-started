@@ -18,6 +18,7 @@ Here is a list of content that the Amazon EC2 Mac team has created. If there is 
 - [Getting Started with Amazon EC2 Mac instances: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-getting-started) (and you're here—this page is a part of it!)
 - [Amazon EC2 Mac MDM Enrollment Automation: GitHub Repo](https://github.com/aws-samples/amazon-ec2-mac-mdm-enrollment-automation)
 - [Getting Started with Amazon EC2 Mac Demo Video](https://www.youtube.com/watch?v=FtU2_bBfSgM)
+- [Build Your iOS Applications Faster with a CI/CD Pipeline](https://community.aws/content/2duRxOl9WuYETq6dMhAQQ1kDZLr/cicd-for-ios-app)
 
 #### Blogs:
 - [Quickly Restore Amazon EC2 Mac Instances using Replace Root Volume capability](https://aws.amazon.com/blogs/compute/new-reset-amazon-ec2-mac-instances-to-a-known-state-using-replace-root-volume-capability/)
