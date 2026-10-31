@@ -17,7 +17,8 @@
 6. [Launch an instance onto the allocated host](steps/02_launch_instance.md).
 7. [Connect to the instance over SSH and enable graphical access](steps/03_connect_and_enable.md).
 8. [(Optional) Resize the filesystem, mount an EFS filesystem, or install software through brew](steps/04_resize_mount_install.md).
-9. *Congratulations, you're up-and-running with an Amazon EC2 Mac instance!*
+9. [(Optional) Set up observability with Amazon CloudWatch](steps/05_observability.md).
+10. *Congratulations, you're up-and-running with an Amazon EC2 Mac instance!*
 
 ---
 #### Stuck at any point? Please let us know by [opening a GitHub issue](https://github.com/aws-samples/amazon-ec2-mac-getting-started/issues/new/choose), create a [re:Post](https://repost.aws/) with tag #ec2mac, or reach out via [email](mailto:ec2-mac-wwso@amazon.com).

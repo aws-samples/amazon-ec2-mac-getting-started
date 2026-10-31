@@ -1,0 +1,36 @@
+{
+  "agent": {
+    "metrics_collection_interval": 60,
+    "run_as_user": "root"
+  },
+  "metrics": {
+    "append_dimensions": {
+      "InstanceId": "${aws:InstanceId}",
+      "InstanceType": "${aws:InstanceType}",
+      "ImageId": "${aws:ImageId}"
+    },
+    "metrics_collected": {
+      "cpu": { "totalcpu": true, "measurement": ["usage_active"] },
+      "mem": { "measurement": ["available_percent"] },
+      "swap": { "measurement": ["used"] },
+      "disk": { "resources": ["/System/Volumes/Data"], "drop_device": true, "measurement": ["free"] },
+      "processes": { "measurement": ["total"] },
+      "statsd": {
+        "service_address": "127.0.0.1:8125",
+        "metrics_collection_interval": 60,
+        "metrics_aggregation_interval": 60
+      }
+    }
+  },
+  "logs": {
+    "logs_collected": {
+      "files": {
+        "collect_list": [
+          { "file_path": "/var/log/amazon/ec2/system-monitoring.log", "log_group_name": "/ec2-mac/system-monitor", "log_stream_name": "{instance_id}", "retention_in_days": 30 },
+          { "file_path": "/var/log/amazon/ec2/ec2-macos-init.log", "log_group_name": "/ec2-mac/ec2-macos-init", "log_stream_name": "{instance_id}", "retention_in_days": 30 },
+          { "file_path": "/var/log/amazon/ec2/cloudwatch-agent-install.log", "log_group_name": "/ec2-mac/cloudwatch-agent-install", "log_stream_name": "{instance_id}", "retention_in_days": 30 }
+        ]
+      }
+    }
+  }
+}

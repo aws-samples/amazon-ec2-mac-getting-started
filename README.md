@@ -35,6 +35,7 @@ Much of the work behind EC2 Mac instances ensures they behave like any other EC2
 * Check out our [Collateral page](collateral.md) with blogs, videos, tutorials, and documentation! Topics range from integrations with CI/CD workflows, working with third-party AMIs, deeper dives into how EC2 Mac works, and more. Take a look!
 * The [Games](games.md) page has resources on how EC2 Mac enables faster game delivery to market.
 * EC2 Mac provides [SNS notifications](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/ec2-mac-instances.html#subscribe-notifications) for macOS and bridgeOS/firmware updates
+* [Set up observability](steps/05_observability.md) with the Amazon CloudWatch agent: metrics, logs, macOS health, and alarms.
 * Our [proof-of-concept (PoC) guide ](https://github.com/aws-samples/amazon-ec2-mac-getting-started/blob/main/poc.md) walks you through some best practices and guides you step-by-step towards implementation.
 * More to come soon!
  
